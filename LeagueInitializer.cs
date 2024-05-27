@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using Microsoft.VisualBasic.FileIO;
 
@@ -86,8 +87,47 @@ public class LeagueInitializer
 
     private List<Round> DrawRounds(Dictionary<string, Team> teams)
     {
-        // TODO: Implement this method (drawing rounds)
-        return new List<Round>();
+        var rounds = new List<Round>();
+        
+        var teamsNames = teams.Keys.ToList();
+        int numRounds = teamsNames.Count - 1;
+        int half = teamsNames.Count / 2;
+
+
+        for (int _ = 0; _ < numRounds; _++)
+        {
+            var round = new Round()
+            {
+                Matches = []
+            };
+
+            for (int matchNum = 0; matchNum < half; matchNum++)
+            {
+                var match = new Match(teams[teamsNames[matchNum]], teams[teamsNames[teamsNames.Count - matchNum - 1]]);
+                round.Matches.Add(match);
+            }
+            rounds.Add(round);
+
+            teamsNames.Insert(1, teamsNames.Last());
+            teamsNames.RemoveAt(teamsNames.Count - 1);
+        }
+
+        for (int roundNum = 0; roundNum < numRounds; roundNum++)
+        {
+            var round = new Round
+            {
+                Matches = []
+            };
+
+            for (int matchNum = 0; matchNum < half; matchNum++)
+            {
+                var match = new Match(rounds[roundNum].Matches[matchNum].AwayTeam, rounds[roundNum].Matches[matchNum].HomeTeam);
+                round.Matches.Add(match);
+            }
+            rounds.Add(round);
+        }
+
+        return rounds;
     }
 
     public void Init()
