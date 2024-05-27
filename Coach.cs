@@ -1,8 +1,8 @@
 ﻿namespace FootballManager;
 
-public class Coach(string name, string nationality, int age)
+public class Coach()
 {
-    public string Name { get; set; } = name;
-    public string Nationality { get; set; } = nationality;
-    public int Age { get; set; } = age;
+    public string Name { get; set; }
+    public string Nationality { get; set; }
+    public int Age { get; set; }
 }

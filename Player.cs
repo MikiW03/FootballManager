@@ -1,14 +1,14 @@
 ﻿namespace FootballManager;
 
-public class Player(string name, int age, string nationality, Position position, int attack, int defense, int overall)
+public class Player()
 {
-    public string Name { get; set; } = name;
-    public int Age { get; set; } = age;
-    public string Nationality { get; set; } = nationality;
-    public Position Position { get; set; } = position;
-    public int Attack { get; set; } = attack;
-    public int Defense { get; set; } = defense;
-    public int Overall { get; set; } = overall;
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Nationality { get; set; }
+    public Position Position { get; set; }
+    public int Attack { get; set; }
+    public int Defense { get; set; }
+    public int Overall { get; set; }
     public int Absence { get; set; }
     public int Goals { get; set;  }
     public int Assists { get; set; }

@@ -1,9 +1,11 @@
 ﻿namespace FootballManager;
 
-public class League(List<Team> teams, List<Round> rounds)
+public class League(Dictionary<string, Team> teams, List<Round> rounds)
 {
-    public List<Team> Teams { get; set; } = teams;
+    public Dictionary<string, Team> Teams { get; set; } = teams;
     public List<Round> Rounds { get; set; } = rounds;
+
+    private string DataOutputPath { get; set; } = "data_output";
 
     public void StartLeague()
     {
