@@ -95,7 +95,8 @@ public class LeagueInitializer
         var teams = LoadTeams();
         var rounds = DrawRounds(teams);
 
-        League league = new(teams, rounds);
+        var csvSaver = new CsvSaver();
+        League league = new(teams, rounds, csvSaver);
         league.StartLeague();
     }
 }
