@@ -6,4 +6,9 @@ public class InjuryEvent(Team team, int minute, Player player, int duration) : E
     public int Minute { get; set; } = minute;
     public Player Player { get; set; } = player;
     public int Duration { get; set; } = duration;
+
+    public override void PrintDetails()
+    {
+        Console.WriteLine($"{Minute}' Injury -  {Player.Name} ({Team.Name})");
+    }
 }

@@ -6,4 +6,9 @@ public class SubstitutionEvent(Team team, int minute, Player player, Player? sub
     public int Minute { get; set; } = minute;
     public Player Player { get; set; } = player;
     public Player Substitute { get; set; } = substitute;
+
+    public override void PrintDetails()
+    {
+        Console.WriteLine($"{Minute}' Substitution - {Player.Name}({Substitute.Name}) ({Team.Name})");
+    }
 }
