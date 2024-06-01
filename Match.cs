@@ -16,13 +16,23 @@ public class Match(Team homeTeam, Team awayTeam)
         HomeLineup = HomeTeam.GetSquad();
         AwayLineup = AwayTeam.GetSquad();
         Events = DrawEvents();
-        //UpdateStats();
+        UpdateStats();
     }
 
     private List<Event> DrawEvents()
     {
         // TODO: Implement this method (drawing match events)
-        return new List<Event>();
+        
+        // For testing purposes
+        var goal1 = new GoalEvent(HomeTeam, 20, HomeTeam.Players[0]);
+        var goal2 = new GoalEvent(AwayTeam, 88, AwayTeam.Players[0], AwayTeam.Players[1]);
+        var yellow = new YellowCardEvent(HomeTeam, 40, HomeTeam.Players[0]);
+        var red = new RedCardEvent(HomeTeam, 30, HomeTeam.Players[4]);
+        var sub = new SubstitutionEvent(HomeTeam, 70, HomeTeam.Players[4], HomeTeam.Players[9]);
+        var injury = new InjuryEvent(AwayTeam, 31, AwayTeam.Players[5], 4);
+        var injury2 = new InjuryEvent(HomeTeam, 1, HomeTeam.Players[2], 1);
+
+        return [goal1, goal2, yellow, red, sub, injury, injury2];
     }
 
     private void UpdateStats()
@@ -30,25 +40,18 @@ public class Match(Team homeTeam, Team awayTeam)
         // TODO: Implement this method (updating players and teams stats)
         foreach (var matchEvent in Events)
         {
-            if (matchEvent is GoalEvent goalEvent)
+            switch (matchEvent)
             {
-
-            }
-            else if (matchEvent is YellowCardEvent yellowCardEvent)
-            {
-
-            }
-            else if (matchEvent is RedCardEvent redCardEvent)
-            {
-                
-            } 
-            else if (matchEvent is SubstitutionEvent substitutionEvent)
-            {
-                
-            } 
-            else if (matchEvent is InjuryEvent injuryEvent)
-            {
-                
+                case GoalEvent goalEvent:
+                    break;
+                case YellowCardEvent yellowCardEvent:
+                    break;
+                case RedCardEvent redCardEvent:
+                    break;
+                case SubstitutionEvent substitutionEvent:
+                    break;
+                case InjuryEvent injuryEvent:
+                    break;
             }
         }
     }
