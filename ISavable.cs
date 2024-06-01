@@ -2,5 +2,5 @@
 
 public interface ISavable
 {
-    void SaveData(string path, Round round);
+    void SaveData(Round round, int roundNumber);
 }

@@ -1,4 +1,4 @@
-﻿namespace FootballManager;
+namespace FootballManager;
 
 public class League(Dictionary<string, Team> teams, List<Round> rounds, ISavable dataSaver)
 {
@@ -6,14 +6,12 @@ public class League(Dictionary<string, Team> teams, List<Round> rounds, ISavable
     public List<Round> Rounds { get; set; } = rounds;
     private ISavable DataSaver { get; set; } = dataSaver;
 
-    private string DataOutputPath { get; set; } = "data_output";
-
     public void StartLeague()
     {
         foreach (var round in Rounds)
         {
             round.Simulate();
-            DataSaver.SaveData(DataOutputPath, round);
+            DataSaver.SaveData(round, Rounds.IndexOf(round) + 1);
         }
     }
 }
