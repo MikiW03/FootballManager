@@ -23,7 +23,19 @@ public class Team()
 
     public List<Player> GetSquad()
     {
-        // TODO: Implement this method (setting lineup that is supposed to play in match)
-        return [];
+        var availablePlayers = Players.OrderByDescending(player => player.Overall).Where(player => player.Absence == 0).ToList();
+        var defenders = availablePlayers.FindAll(player => player.Position == Position.Defender);
+        var midfielders = availablePlayers.FindAll(player => player.Position == Position.Midfielder);
+        var forwards = availablePlayers.FindAll(player => player.Position == Position.Forward);
+        var goalkeepers = availablePlayers.FindAll(player => player.Position == Position.Goalkeeper);
+
+        return goalkeepers.Take(1)
+                .Concat(defenders.Take(Formation.Defenders))
+                .Concat(midfielders.Take(Formation.Midfielders))
+                .Concat(forwards.Take(Formation.Forwards))
+                .Concat(defenders).Take(3)
+                .Concat(midfielders).Take(3)
+                .Concat(forwards).Take(3)
+                .ToList();
     }
 }
