@@ -9,6 +9,6 @@ public class InjuryEvent(Team team, int minute, Player player, int duration) : E
 
     public override void PrintDetails()
     {
-        Console.WriteLine($"{Minute}' Injury -  {Player.Name} ({Team.Name})");
+        Console.WriteLine($"{Minute}' Injury -  {Player.Name}(Matches: {Duration}) ({Team.Name})");
     }
 }
