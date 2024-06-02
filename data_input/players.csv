@@ -1,571 +1,571 @@
-﻿name;age;position;minutes_played;nationality;goals;assists;conceded;overall;attack;defense;club
-Virgil van Dijk;28;Defender;3385;Netherlands;4;2;19;91;72;93;Liverpool
-Cesar Azpilicueta;30;Defender;3403;Spain;1;5;38;90;73;89;Chelsea
-Andrew Robertson;25;Defender;3219;Scotland;0;11;17;90;77;91;Liverpool
-Alisson Becker;27;Goalkeeper;3420;Brazil;0;0;19;88;67;88;Liverpool
-Luka Milivojević;28;Midfielder;3420;Serbia;12;2;47;89;81;78;Crystal Palace
-Ederson;26;Goalkeeper;3420;Brazil;0;1;23;88;68;87;Manchester City
-Trent Alexander-Arnold;21;Defender;2467;England;1;12;14;77;75;81;Liverpool
-Nathan Aké;24;Defender;3412;Netherlands;4;0;66;88;71;84;AFC Bournemouth
-Ben Mee;30;Defender;3420;England;0;2;57;88;69;86;Burnley
-Jordan Pickford;25;Goalkeeper;3420;England;0;0;44;87;67;83;Everton
-Kasper Schmeichel;32;Goalkeeper;3420;Denmark;0;0;43;87;67;83;Leicester City
-Martin Dúbravka;30;Goalkeeper;3420;Slovakia;0;0;44;87;67;83;Newcastle United
-Bruno Écuélé Manga;31;Defender;3375;Gabon;0;1;59;87;67;85;Cardiff City
-Ben Chilwell;22;Defender;3240;England;0;4;39;87;70;87;Leicester City
-David Luiz;32;Defender;3239;Brazil;3;2;35;87;71;87;Chelsea
-Łukasz Fabiański;34;Goalkeeper;3420;Poland;0;0;48;86;67;82;West Ham United
-David de Gea;28;Goalkeeper;3420;Spain;0;0;51;86;67;82;Manchester United
-Ben Foster;36;Goalkeeper;3420;England;0;0;57;86;67;81;Watford
-Neil Leonard Dula Etheridge;29;Goalkeeper;3420;Philippines;0;0;61;86;67;80;Cardiff City
-Patrick van Aanholt;29;Defender;3198;Netherlands;3;2;41;86;70;86;Crystal Palace
-Ryan Fraser;25;Midfielder;3173;Scotland;7;14;61;86;86;71;AFC Bournemouth
-Matt Doherty;27;Defender;3147;Republic of Ireland;4;5;38;86;74;86;Wolverhampton Wanderers
-Gylfi Sigurdsson;30;Midfielder;3134;Iceland;13;6;40;86;84;75;Everton
-Eden Hazard;28;Midfielder;2926;Belgium;16;15;34;86;95;73;Chelsea
-Conor Coady;26;Midfielder;3420;England;0;0;43;85;67;78;Wolverhampton Wanderers
-Rui Patrício;31;Goalkeeper;3330;Portugal;0;0;43;85;66;82;Wolverhampton Wanderers
-Charlie Taylor;26;Defender;3240;England;0;1;53;85;67;84;Burnley
-Nathan Redmond;25;Midfielder;3276;England;6;4;53;85;76;74;Southampton
-Willy Boly;28;Defender;3169;France;4;0;38;85;69;86;Wolverhampton Wanderers
-Ricardo Pereira;26;Defender;3125;Portugal;2;6;40;85;73;85;Leicester City
-Georginio Wijnaldum;28;Midfielder;2735;Netherlands;3;0;15;75;66;74;Liverpool
-Aymeric Laporte;25;Defender;3057;France;3;3;21;85;71;88;Manchester City
-Paul Pogba;26;Midfielder;3011;France;13;9;41;85;87;73;Manchester United
-Kepa Arrizabalaga;25;Goalkeeper;3240;Spain;0;0;38;84;66;82;Chelsea
-Christopher Schindler;29;Defender;3262;Germany;1;0;69;84;67;81;Huddersfield Town
-Jack Cork;30;Midfielder;3313;England;1;2;54;84;69;75;Burnley
-Wilfred Ndidi;22;Midfielder;3299;Nigeria;2;0;42;84;68;77;Leicester City
-Shane Duffy;27;Defender;3088;Republic of Ireland;5;1;51;84;71;82;Brighton & Hove Albion
-Lewis Dunk;27;Defender;3153;England;2;1;53;84;68;83;Brighton & Hove Albion
-James Tarkowski;26;Defender;3087;England;3;1;52;83;69;82;Burnley
-Craig Cathcart;30;Defender;3099;Northern Ireland;3;0;52;83;68;82;Watford
-Raúl Jiménez;28;Forward;3124;Mexico;13;7;39;83;85;65;Wolverhampton Wanderers
-Ryan Bennett;29;Defender;3060;England;1;0;36;83;66;85;Wolverhampton Wanderers
-Wilfried Zaha;26;Midfielder;3041;Ivory Coast;10;5;45;83;80;73;Crystal Palace
-Felipe Anderson;26;Midfielder;3054;Brazil;9;4;43;83;78;73;West Ham United
-Lucas Digne;26;Defender;2990;France;4;4;36;83;72;84;Everton
-Aleksandar Mitrović;25;Forward;3282;Serbia;11;3;74;82;80;60;Fulham
-N'Golo Kanté;28;Midfielder;3096;France;4;4;37;82;73;75;Chelsea
-Sean Morrison;28;Defender;3040;England;1;3;57;82;69;80;Cardiff City
-James McArthur;32;Midfielder;3071;Scotland;3;6;44;82;74;73;Crystal Palace
-Jorginho;27;Midfielder;3165;Italy;2;0;36;81;67;76;Chelsea
-Aaron Wan-Bissaka;21;Midfielder;3135;England;0;3;41;81;68;75;Crystal Palace
-Abdoulaye Doucouré;26;Midfielder;3062;France;5;6;54;81;76;71;Watford
-Andros Townsend;28;Midfielder;3018;England;6;4;44;81;75;73;Crystal Palace
-João Moutinho;33;Midfielder;3040;Portugal;1;8;37;81;74;74;Wolverhampton Wanderers
-Michael Keane;26;Defender;2970;England;1;2;37;81;67;83;Everton
-Issa Diop;22;Defender;2970;France;1;0;38;81;65;83;West Ham United
-Bernardo Silva;25;Midfielder;2853;Portugal;7;7;22;81;78;75;Manchester City
-Mathew Ryan;27;Goalkeeper;3060;Australia;0;0;52;80;65;77;Brighton & Hove Albion
-Rúben Neves;22;Midfielder;3009;Portugal;4;3;40;80;72;73;Wolverhampton Wanderers
-Toby Alderweireld;30;Defender;2924;Belgium;0;0;28;80;64;85;Tottenham Hotspur
-Matt Ritchie;30;Midfielder;2940;Scotland;2;8;37;80;74;73;Newcastle United
-Raheem Sterling;24;Forward;2777;England;17;10;19;80;90;64;Manchester City
-Christian Eriksen;27;Midfielder;2772;Denmark;8;12;34;80;83;71;Tottenham Hotspur
-Declan Rice;20;Midfielder;3005;Republic of Ireland;2;0;42;79;67;73;West Ham United
-Hugo Lloris;32;Goalkeeper;2970;France;0;0;30;79;64;80;Tottenham Hotspur
-Antonio Rüdiger;26;Defender;2874;Germany;1;0;34;79;65;83;Chelsea
-James Maddison;22;Midfielder;2850;England;7;7;39;79;78;71;Leicester City
-Kyle Walker;29;Defender;2777;England;1;1;17;79;65;85;Manchester City
-Marcos Alonso;28;Defender;2761;Spain;2;4;28;79;69;82;Chelsea
-Joshua King;27;Forward;2974;Norway;12;3;54;78;79;60;AFC Bournemouth
-Ayoze Perez;26;Forward;2929;Spain;12;2;34;78;78;63;Newcastle United
-Étienne Capoue;31;Midfielder;2947;France;1;3;47;78;68;71;Watford
-Jonny;25;Defender;2780;Spain;1;1;36;78;65;81;Wolverhampton Wanderers
-Pierre-Emerick Aubameyang;30;Forward;2731;Gabon;22;5;40;78;90;59;Arsenal
-Bernd Leno;27;Goalkeeper;2835;Germany;0;0;39;77;64;76;Arsenal
-Steve Cook;28;Defender;2787;England;1;1;53;77;65;78;AFC Bournemouth
-Ashley Westwood;29;Midfielder;2822;England;2;7;44;77;73;70;Burnley
-Jamaal Lascelles;25;Defender;2748;England;0;1;33;77;64;81;Newcastle United
-Jamie Vardy;32;Forward;2735;England;18;4;33;77;85;61;Leicester City
-Mohamed Salah;27;Forward;3262;Egypt;22;8;18;90;96;71;Liverpool
-Idrissa Gueye;30;Midfielder;2825;Senegal;0;2;29;76;66;73;Everton
-Sergio Aguero;31;Forward;2480;Argentina;21;8;15;76;91;61;Manchester City
-Jonas Lössl;30;Goalkeeper;2777;Denmark;0;1;52;75;64;73;Huddersfield Town
-Pierre-Emile Højbjerg;24;Midfielder;2764;Denmark;4;3;52;75;70;67;Southampton
-Terence Kongolo;25;Defender;2722;Netherlands;1;1;62;75;65;75;Huddersfield Town
-Sadio Mané;27;Forward;3086;Senegal;22;1;18;85;88;69;Liverpool
-Kurt Zouma;25;Defender;2610;France;2;2;37;75;67;78;Everton
-Luke Shaw;24;Defender;2592;England;1;4;36;75;67;78;Manchester United
-Shkodran Mustafi;27;Defender;2617;Germany;2;0;36;75;65;79;Arsenal
-Victor Lindelöf;25;Defender;2602;Sweden;1;1;38;75;65;78;Manchester United
-Joe Bennett;29;Defender;2641;England;0;1;43;75;64;78;Cardiff City
-Joel Matip;28;Defender;1532;Cameroon;1;0;9;57;58;69;Liverpool
-Séamus Coleman;31;Defender;2560;Republic of Ireland;2;2;29;75;66;79;Everton
-Richarlison;22;Forward;2679;Brazil;13;1;32;74;77;60;Everton
-Harry Maguire;26;Defender;2599;England;3;0;36;74;65;78;Leicester City
-Rondon;30;Forward;2609;Venezuela;11;7;29;74;81;60;Newcastle United
-James Tomkins;30;Defender;2563;England;1;1;34;74;64;78;Crystal Palace
-Roberto Pereyra;28;Forward;2825;Argentina;6;1;52;73;71;58;Watford
-Denis Odoi;31;Defender;2593;Belgium;0;1;59;73;63;74;Fulham
-Callum Wilson;27;Forward;2535;England;14;9;44;73;85;56;AFC Bournemouth
-Calum Chambers;24;Defender;2587;England;2;0;49;73;64;76;Fulham
-Souleymane Bamba;34;Defender;2475;Ivory Coast;4;1;46;73;67;75;Cardiff City
-Alexandre Lacazette;28;Forward;2503;France;13;8;28;73;83;59;Arsenal
-José Holebas;35;Defender;2394;Greece;3;6;38;73;70;75;Watford
-David Silva;33;Midfielder;2411;Spain;6;8;14;73;76;70;Manchester City
-Sergio Rico;26;Goalkeeper;2610;Spain;0;0;53;72;63;70;Fulham
-Víctor Camarasa;25;Midfielder;2579;Spain;5;4;48;72;71;66;Cardiff City
-DeAndre Yedlin;26;Defender;2475;USA;1;2;37;72;65;76;Newcastle United
-Harry Kane;26;Forward;2427;England;17;4;28;72;83;58;Tottenham Hotspur
-Troy Deeney;31;Forward;2548;England;9;5;43;71;76;56;Watford
-Chris Wood;27;Forward;2582;New Zealand;10;2;43;71;74;57;Burnley
-Ashley Young;34;Midfielder;2568;England;2;2;41;71;66;67;Manchester United
-Granit Xhaka;27;Midfielder;2502;Switzerland;4;2;35;71;68;67;Arsenal
-Mamadou Sakho;29;Defender;2417;France;0;0;32;71;62;77;Crystal Palace
-Diogo José Teixeira da Silva;22;Midfielder;2371;Portugal;9;5;29;71;75;67;Wolverhampton Wanderers
-Glenn Murray;36;Forward;2513;England;13;1;44;70;76;56;Brighton & Hove Albion
-Davy Pröpper;28;Midfielder;2551;Netherlands;1;1;44;70;64;66;Brighton & Hove Albion
-Solly March;25;Midfielder;2473;England;1;5;39;70;68;66;Brighton & Hove Albion
-Will Hughes;24;Midfielder;2436;England;2;4;39;70;68;66;Watford
-Kieran Trippier;29;Defender;2278;England;1;3;20;70;65;77;Tottenham Hotspur
-Ryan Sessegnon;19;Defender;2298;England;2;6;58;70;69;70;Fulham
-Jefferson Lerma;25;Midfielder;2511;Colombia;2;0;45;69;64;65;AFC Bournemouth
-Dale Stephens;30;Midfielder;2487;England;1;1;43;69;64;65;Brighton & Hove Albion
-Joe Bryan;26;Defender;2350;England;0;1;51;69;62;72;Fulham
-Fernandinho;34;Midfielder;2381;Brazil;1;3;15;69;65;70;Manchester City
-Marcus Rashford;22;Forward;2362;England;10;6;34;69;77;56;Manchester United
-Ashley Barnes;29;Forward;2400;England;12;2;34;69;76;56;Burnley
-Mark Noble;32;Midfielder;2308;England;5;5;29;69;71;66;West Ham United
-Nemanja Matić;31;Midfielder;2441;Serbia;1;0;35;68;63;66;Manchester United
-Lucas Torreira;23;Midfielder;2377;Uruguay;2;2;35;68;65;66;Arsenal
-Moussa Sissoko;30;Midfielder;2336;France;0;3;26;68;64;67;Tottenham Hotspur
-Sokratis Papastathopoulos;31;Defender;2199;Greece;1;2;31;68;63;74;Arsenal
-Jonathan Hogg;30;Midfielder;2377;England;0;1;42;67;62;64;Huddersfield Town
-Aaron Mooy;29;Midfielder;2327;Australia;3;1;46;67;65;63;Huddersfield Town
-Maxime Le Marchand;30;Defender;2251;France;0;1;50;67;62;71;Fulham
-Robert Snodgrass;32;Midfielder;2222;Scotland;2;5;31;67;68;64;West Ham United
-Mathias Jørgensen;29;Defender;2148;Denmark;3;1;37;67;64;72;Huddersfield Town
-Lucas Moura;27;Midfielder;2127;Brazil;10;0;16;67;70;66;Tottenham Hotspur
-Aron Einar Gunnarsson;30;Midfielder;2274;Iceland;1;1;37;66;63;64;Cardiff City
-Alex McCarthy;29;Goalkeeper;2250;England;0;0;37;66;61;68;Southampton
-Ryan Bertrand;30;Defender;2160;England;1;0;36;66;61;72;Southampton
-Jan Bednarek;23;Defender;2151;Poland;0;1;33;66;61;73;Southampton
-Martín Montoya;28;Defender;2166;Spain;0;1;38;66;61;72;Brighton & Hove Albion
-Chris Smalling;29;Defender;2128;England;1;0;34;66;61;72;Manchester United
-İlkay Gündoğan;29;Midfielder;2135;Germany;6;3;15;66;69;66;Manchester City
-Fabian Schär;27;Defender;2002;Switzerland;4;1;21;66;65;73;Newcastle United
-David Brooks;22;Forward;2278;England;7;5;39;65;73;53;AFC Bournemouth
-Jean Michauebl Seri;28;Midfielder;2252;Ivory Coast;1;2;53;65;64;60;Fulham
-Adam Smith;28;Defender;2073;England;1;1;30;65;62;72;AFC Bournemouth
-Pablo Zabaleta;34;Defender;2092;Argentina;0;1;32;65;61;72;West Ham United
-Michail Antonio;29;Midfielder;2099;England;6;4;26;65;70;63;West Ham United
-Leroy Sané;23;Midfielder;1867;Germany;10;10;14;65;79;63;Manchester City
-Philip Billing;23;Midfielder;2192;Denmark;2;0;41;64;62;62;Huddersfield Town
-Asmir Begović;32;Goalkeeper;2160;Bosnia and Herzegovina;0;0;44;64;60;66;AFC Bournemouth
-Bernard Anício Caldeira Duarte;27;Midfielder;2128;Brazil;1;3;19;64;64;65;Everton
-Jannik Vestergaard;27;Defender;2030;Denmark;0;0;27;64;60;72;Southampton
-Heung-Min Son;27;Forward;2048;South Korea;12;6;20;64;78;54;Tottenham Hotspur
-Chris Löwe;30;Defender;2056;Germany;0;2;52;64;62;68;Huddersfield Town
-Erik Durm;27;Defender;2052;Germany;0;1;43;64;61;69;Huddersfield Town
-Tim Ream;32;Defender;2051;USA;0;0;47;64;60;69;Fulham
-Gerard Deulofeu;25;Forward;2082;Spain;10;5;28;64;75;53;Watford
-Jonny Evans;31;Defender;1995;Northern Ireland;1;0;22;64;60;73;Leicester City
-Callum Paterson;25;Defender;1996;Scotland;4;1;37;64;64;70;Cardiff City
-Fabián Balbuena;28;Defender;2014;Paraguay;1;0;27;64;61;72;West Ham United
-Tom Cairney;28;Midfielder;2198;Scotland;1;1;49;63;62;60;Fulham
-Romelu Lukaku;26;Forward;2130;Belgium;12;0;36;63;72;52;Manchester United
-Oriol Romeu;28;Midfielder;2140;Spain;1;0;32;63;61;63;Southampton
-Mohamed Diamé;32;Midfielder;2165;Senegal;0;0;28;63;60;64;Newcastle United
-Matteo Guendouzi;20;Midfielder;2143;France;0;0;28;63;60;64;Arsenal
-Paul Dummett;28;Defender;1986;Wales;0;0;27;63;59;72;Newcastle United
-Fabinho;26;Midfielder;2013;Brazil;1;2;13;63;63;65;Liverpool
-Sead Kolašinac;26;Defender;1891;Bosnia and Herzegovina;0;5;26;63;64;71;Arsenal
-Davinson Sánchez;23;Defender;1943;Colombia;1;1;21;63;61;72;Tottenham Hotspur
-Wes Morgan;35;Defender;1926;Jamaica;3;0;24;63;62;71;Leicester City
-Jan Vertonghen;32;Defender;1915;Belgium;1;0;21;63;60;72;Tottenham Hotspur
-Nacho Monreal;33;Defender;1861;Spain;1;3;21;63;63;71;Arsenal
-Willian;31;Forward;2108;Brazil;3;6;23;62;69;54;Chelsea
-Alex Pritchard;26;Midfielder;2092;England;2;0;39;62;62;61;Huddersfield Town
-Jeff Hendrick;27;Midfielder;2069;Republic of Ireland;3;0;41;62;63;60;Burnley
-Nampalys Mendy;27;Midfielder;2088;France;0;0;26;62;60;63;Leicester City
-Marko Arnautović;30;Forward;2000;Austria;10;4;31;62;74;51;West Ham United
-Demarai Gray;23;Midfielder;1992;England;4;1;26;62;64;62;Leicester City
-Jordan Henderson;29;Midfielder;1983;England;1;3;11;62;63;65;Liverpool
-Angelo Ogbonna;31;Defender;1870;Italy;1;1;32;62;61;69;West Ham United
-Adrian Mariappa;33;Defender;1921;Jamaica;0;0;29;62;59;70;Watford
-Cyrus Christie;27;Defender;1943;Republic of Ireland;0;1;40;62;60;68;Fulham
-Danny Rose;29;Defender;1806;England;0;3;12;62;62;72;Tottenham Hotspur
-Theo Walcott;30;Forward;2122;England;5;2;33;61;67;52;Everton
-Kiko Femenía;28;Midfielder;2045;Spain;1;1;38;61;62;60;Watford
-André Gomes;26;Midfielder;1986;Portugal;1;1;27;61;61;62;Everton
-Harry Arter;29;Midfielder;2008;Republic of Ireland;0;1;37;61;61;60;Cardiff City
-James Ward-Prowse;24;Midfielder;1942;England;7;0;36;61;66;59;Southampton
-Ben Davies;26;Defender;1839;Wales;0;0;24;61;59;70;Tottenham Hotspur
-David Junior Hoilett;29;Forward;2142;Canada;3;1;42;60;64;51;Cardiff City
-Alex Iwobi;23;Forward;1972;Nigeria;3;6;31;60;68;51;Arsenal
-Pascal Groß;28;Midfielder;1878;Germany;3;3;31;60;65;59;Brighton & Hove Albion
-Isaac Hayden;24;Midfielder;1886;England;1;4;25;60;64;61;Newcastle United
-Cheikhou Kouyaté;29;Midfielder;1897;Senegal;0;2;24;60;61;61;Crystal Palace
-Florent Hadergjonaj;25;Defender;1840;Switzerland;0;0;34;60;59;68;Huddersfield Town
-Gaëtan Bong Songo;31;Defender;1805;Cameroon;0;0;32;60;59;68;Brighton & Hove Albion
-Joe Gomez;22;Defender;1060;England;0;0;3;48;55;64;Liverpool
-Dele Alli;23;Midfielder;1827;England;5;3;17;60;67;61;Tottenham Hotspur
-Anthony Knockaert;27;Midfielder;1832;France;2;6;36;60;67;58;Brighton & Hove Albion
-Arthur Masuaku;25;Defender;1756;France;0;1;26;60;59;69;West Ham United
-John Stones;25;Defender;1762;England;0;0;15;60;58;71;Manchester City
-Pedro Rodriguez;32;Midfielder;1780;Spain;8;2;18;60;68;61;Chelsea
-Joe Ralls;26;Midfielder;1959;England;0;0;35;59;59;60;Cardiff City
-Yan Valery;20;Defender;1715;France;2;1;26;59;61;68;Southampton
-Bernardo;24;Defender;1750;Brazil;0;1;28;59;59;68;Brighton & Hove Albion
-Matthew Lowton;30;Defender;1748;England;0;0;35;59;58;67;Burnley
-Johann Berg Guðmunds­son;29;Midfielder;1748;Iceland;3;6;31;59;67;58;Burnley
-Jeffrey Schlupp;26;Defender;1665;Ghana;4;1;24;59;63;68;Crystal Palace
-Vicente Guaita;32;Goalkeeper;1755;Spain;0;0;21;58;58;65;Crystal Palace
-Mesut Özil;31;Midfielder;1741;Germany;5;2;23;58;65;59;Arsenal
-Phil Bardsley;34;Defender;1672;Scotland;0;0;22;58;58;68;Burnley
-Jack Stephens;25;Defender;1697;England;1;0;30;58;59;67;Southampton
-Tom Heaton;33;Goalkeeper;1710;England;0;0;23;57;58;64;Burnley
-Mateo Kovačić;25;Midfielder;1743;Croatia;0;2;18;57;60;60;Chelsea
-Henrikh Mkhitaryan;30;Midfielder;1643;Armenia;6;4;25;57;68;57;Arsenal
-Jesse Lingard;26;Midfielder;1668;England;4;2;25;57;64;58;Manchester United
-Aaron Cresswell;29;Defender;1589;England;0;1;22;57;58;67;West Ham United
-Hector Bellerin;24;Defender;1535;Spain;0;5;20;57;62;67;Arsenal
-Roberto Firmino;28;Forward;2620;Brazil;12;6;13;75;81;63;Liverpool
-Josh Murphy;24;Forward;1825;England;3;2;27;56;64;49;Cardiff City
-Joe Hart;32;Goalkeeper;1710;England;0;0;34;56;58;61;Burnley
-Dominic Calvert-Lewin;22;Forward;1774;England;6;2;24;56;66;49;Everton
-Dan Gosling;29;Midfielder;1737;England;2;1;31;56;61;57;AFC Bournemouth
-Yves Bissouma;23;Midfielder;1769;Mali;0;0;30;56;58;58;Brighton & Hove Albion
-Marc Albrighton;29;Midfielder;1626;England;2;2;17;56;62;59;Leicester City
-Christian Kabasele;28;Defender;1587;Belgium;0;0;25;56;57;67;Watford
-Lee Peltier;32;Defender;1542;England;0;0;21;56;57;67;Cardiff City
-Charlie Daniels;33;Defender;1583;England;1;0;32;56;58;65;AFC Bournemouth
-Daryl Janmaat;30;Defender;1521;Netherlands;0;2;22;56;59;66;Watford
-Anthony Martial;23;Forward;1623;France;10;2;25;55;70;47;Manchester United
-Danny Ings;27;Forward;1668;England;7;3;26;55;68;47;Southampton
-André Schürrle;28;Midfielder;1650;Germany;6;0;42;55;64;54;Fulham
-Wayne Hennessey;32;Goalkeeper;1575;Wales;0;0;23;55;57;62;Crystal Palace
-Cedric Soares;28;Defender;1494;Portugal;1;2;26;55;60;65;Southampton
-Federico Fernández;30;Defender;1484;Argentina;0;1;22;55;58;66;Newcastle United
-Maya Yoshida;31;Defender;1520;Japan;0;1;27;55;58;65;Southampton
-Steve Mounié;25;Forward;1777;Benin;2;3;34;54;63;47;Huddersfield Town
-Mario Lemina;26;Midfielder;1615;Gabon;1;1;32;54;60;56;Southampton
-Harry Winks;23;Midfielder;1591;England;1;0;16;54;58;58;Tottenham Hotspur
-Dwight McNeil;19;Forward;1599;England;3;5;22;53;65;47;Burnley
-Eric Dier;25;Midfielder;1510;England;3;0;16;53;60;57;Tottenham Hotspur
-Laurent Koscielny;34;Defender;1328;France;3;0;21;53;59;64;Arsenal
-Riyad Mahrez;28;Midfielder;1339;Algeria;7;4;9;53;67;56;Manchester City
-Leander Dendoncker;24;Midfielder;1469;Belgium;2;0;19;52;59;56;Wolverhampton Wanderers
-Christian Atsu Twasam;27;Midfielder;1487;Ghana;1;0;16;52;58;57;Newcastle United
-André-Frank Zambo Anguissa;23;Midfielder;1518;Cameroon;0;0;30;52;57;55;Fulham
-Bobby Reid;26;Midfielder;1422;England;5;2;27;52;64;54;Cardiff City
-Ander Herrera;30;Midfielder;1404;Spain;2;3;17;52;62;56;Manchester United
-Stuart Armstrong;27;Midfielder;1432;Scotland;3;2;23;52;62;55;Southampton
-Aaron Ramsey;28;Midfielder;1327;Wales;4;6;12;52;66;56;Arsenal
-James Milner;33;Midfielder;1785;England;5;4;11;60;67;62;Liverpool
-Max Meyer;24;Midfielder;1414;Germany;1;2;19;51;60;55;Crystal Palace
-Phil Jones;27;Defender;1263;England;0;1;16;51;57;64;Manchester United
-Simon Francis;34;Defender;1226;England;0;2;23;51;58;62;AFC Bournemouth
-Nathaniel Clyne;28;Defender;1254;England;0;1;24;51;57;62;AFC Bournemouth
-Vincent Kompany;33;Defender;1223;Belgium;1;0;7;51;57;65;Manchester City
-Nicolas Otamendi;31;Defender;1233;Argentina;0;0;7;51;56;65;Manchester City
-Juninho Bacuna;22;Midfielder;1414;Netherlands;1;0;36;50;58;52;Huddersfield Town
-Andrew Surman;33;Midfielder;1438;England;0;0;35;50;57;52;AFC Bournemouth
-Hélder Wander Sousa Azevedo Costa;25;Midfielder;1345;Portugal;1;2;18;50;59;55;Wolverhampton Wanderers
-Robert Kenedy Nunes do Nascimento;23;Midfielder;1344;Brazil;1;1;17;50;58;55;Newcastle United
-Ross Barkley;25;Midfielder;1241;England;3;5;13;50;64;54;Chelsea
-Juan Mata;31;Midfielder;1294;Spain;3;2;14;50;61;55;Manchester United
-Matt Targett;24;Defender;1185;England;1;3;24;50;59;61;Southampton
-Andre Gray;28;Forward;1358;England;7;2;23;49;65;44;Watford
-Javier Hernandez;31;Forward;1335;Mexico;7;1;16;49;64;45;West Ham United
-Ki Sung-yueng;30;Midfielder;1302;South Korea;0;1;18;49;57;54;Newcastle United
-Bruno Saltor Grau;39;Defender;1136;Spain;0;1;17;49;56;62;Brighton & Hove Albion
-Wesley Hoedt;25;Defender;1170;Netherlands;0;0;20;49;55;62;Southampton
-Javier Manquillo;25;Defender;1097;Spain;0;3;12;49;58;62;Newcastle United
-Aaron Lennon;32;Midfielder;1217;England;1;1;20;48;58;52;Burnley
-Tom Smith;27;Defender;1141;England;0;0;34;48;55;59;Huddersfield Town
-Oleksandr Zinchenko;22;Midfielder;1153;Ukraine;0;3;4;48;58;55;Manchester City
-Dejan Lovren;30;Defender;985;Croatia;1;0;7;47;55;62;Liverpool
-Martin Kelly;29;Defender;1110;England;0;0;18;48;55;61;Crystal Palace
-Florian Lejeune;28;Defender;1055;France;0;0;12;48;55;62;Newcastle United
-Alfie Mawson;25;Defender;1131;England;0;0;25;48;55;60;Fulham
-Naby Keïta;24;Midfielder;1392;Guinea;2;1;7;51;59;57;Liverpool
-Ryan Guno Babel;32;Forward;1260;Netherlands;5;3;24;47;64;42;Fulham
-Shane Long;32;Forward;1269;Republic of Ireland;5;1;20;47;62;43;Southampton
-Youri Tielemans;22;Midfielder;1092;Belgium;3;4;13;47;62;52;Leicester City
-Xherdan Shaqiri;28;Midfielder;1058;Switzerland;6;3;5;48;64;53;Liverpool
-Diogo Dalot;20;Defender;1015;Portugal;0;2;18;47;57;60;Manchester United
-Adam Masina;25;Defender;1003;Italy;0;1;19;47;56;60;Watford
-Benjamin Mendy;25;Defender;900;France;0;5;6;47;59;61;Manchester City
-Romain Saïss;29;Midfielder;1144;Morocco;2;0;16;46;57;52;Wolverhampton Wanderers
-Angus Gunn;23;Goalkeeper;1080;England;0;0;17;46;55;56;Southampton
-Artur Boruc;39;Goalkeeper;1080;Poland;0;0;17;46;55;56;AFC Bournemouth
-Pedro Obiang;27;Midfielder;1121;Equatorial Guinea;0;1;17;46;56;52;West Ham United
-Ruben Loftus-Cheek;23;Midfielder;983;England;6;2;8;46;62;52;Chelsea
-Jürgen Locadia;25;Forward;1227;Netherlands;2;0;19;45;58;43;Brighton & Hove Albion
-Ryan Fredericks;27;Midfielder;1085;England;1;0;13;45;56;52;West Ham United
-Kevin De Bruyne;28;Midfielder;974;Belgium;2;2;3;45;58;52;Manchester City
-Junior Stanislas;29;Midfielder;1027;England;2;3;24;45;60;49;AFC Bournemouth
-Fred;26;Midfielder;1045;Brazil;1;1;19;45;57;50;Manchester United
-Juan Foyth;21;Defender;930;Argentina;1;0;10;45;55;60;Tottenham Hotspur
-Stephan Lichtsteiner;35;Defender;940;Switzerland;0;0;18;45;54;59;Arsenal
-Erik Lamela;27;Midfielder;971;Argentina;4;2;11;45;60;51;Tottenham Hotspur
-Ciaran Clark;30;Defender;857;Republic of Ireland;3;0;14;45;57;59;Newcastle United
-Yerry Mina;25;Defender;890;Colombia;1;0;12;45;55;59;Everton
-Jordan Ayew;28;Forward;1186;Ghana;1;2;13;44;58;43;Crystal Palace
-Gonzalo Higuain;31;Forward;1092;Argentina;5;0;15;44;60;42;Chelsea
-Gabriel Jesus;22;Forward;1019;Brazil;7;3;11;44;65;41;Manchester City
-Nathaniel Mendez-Laing;27;Midfielder;984;England;4;1;15;44;59;50;Cardiff City
-Harvey Barnes;21;Midfielder;1007;England;1;2;16;44;58;50;Leicester City
-Chris Mepham;21;Defender;849;Wales;0;1;16;44;55;58;AFC Bournemouth
-Danilo;28;Defender;806;Brazil;1;0;7;44;55;59;Manchester City
-Elias Kachunga;27;Forward;1181;Congo DR;0;0;28;43;55;40;Huddersfield Town
-Cenk Tosun;28;Forward;1050;Turkey;3;3;16;43;61;41;Everton
-Ainsley Maitland-Niles;22;Midfielder;985;England;1;1;16;43;56;50;Arsenal
-Jonjo Shelvey;27;Midfielder;944;England;1;1;11;43;56;50;Newcastle United
-Beram Kayal;31;Midfielder;934;Israel;1;1;15;43;56;49;Brighton & Hove Albion
-Rob Holding;24;Defender;807;England;0;0;10;43;54;59;Arsenal
-Jonjoe Kenny;22;Defender;790;England;0;1;14;43;54;58;Everton
-Tom Davies;21;Midfielder;975;England;0;0;18;42;54;49;Everton
-Adama Traoré;23;Midfielder;890;Spain;1;1;11;42;56;50;Wolverhampton Wanderers
-Timothy Fosu-Mensah;21;Defender;795;Netherlands;0;0;18;42;53;57;Fulham
-Laurent Depoitre;30;Forward;1059;Belgium;0;1;22;41;56;40;Huddersfield Town
-Luciano Vietto;25;Forward;983;Argentina;1;4;21;41;59;39;Fulham
-Charlie Austin;30;Forward;980;England;2;2;14;41;58;40;Southampton
-Isaac Success;23;Forward;1037;Nigeria;1;1;20;41;57;40;Watford
-Alireza Jahanbakhsh;26;Forward;1022;Iran;0;0;16;41;55;40;Brighton & Hove Albion
-Alvaro Morata;27;Forward;943;Spain;5;0;11;41;59;40;Chelsea
-Scott McTominay;22;Midfielder;861;England;2;0;17;41;56;48;Manchester United
-Morgan Schneiderlin;29;Midfielder;833;France;0;1;9;41;55;49;Everton
-Ruben Vinagre;20;Defender;703;Portugal;0;0;9;41;53;57;Wolverhampton Wanderers
-Scott Dann;32;Defender;660;England;0;1;7;41;54;57;Crystal Palace
-Jon Gorenc Stankovič;23;Defender;718;Slovenia;1;0;19;41;54;56;Huddersfield Town
-Emerson Palmieri;25;Defender;660;Italy;0;0;10;41;53;57;Chelsea
-Isaac Mbenza;23;Forward;981;Belgium;1;1;25;40;56;38;Huddersfield Town
-Oumar Niasse;29;Forward;998;Senegal;0;0;12;40;54;41;Cardiff City
-Kelechi Iheanacho;23;Forward;926;Nigeria;1;3;11;40;58;40;Leicester City
-Sam Vokes;30;Forward;913;Wales;3;0;18;40;57;39;Burnley
-Olivier Giroud;33;Forward;832;France;2;4;4;40;60;40;Chelsea
-Alexis Sanchez;30;Forward;877;Chile;1;3;8;40;58;40;Manchester United
-Kevin McDonald;30;Midfielder;842;Scotland;0;0;25;40;54;46;Fulham
-Ken Sema;26;Midfielder;755;Sweden;1;2;8;40;56;48;Watford
-Jordon Ibe;23;Midfielder;795;England;1;1;21;40;55;46;AFC Bournemouth
-Mohamed Elyounoussi;25;Midfielder;790;Norway;0;0;8;40;53;49;Southampton
-Andreas Christensen;23;Defender;615;Denmark;0;0;7;40;53;57;Chelsea
-Eric Bailly;25;Defender;637;Ivory Coast;0;0;12;40;53;56;Manchester United
-Greg Cunningham;28;Defender;630;Republic of Ireland;0;0;16;40;53;55;Cardiff City
-Karlan Ahearne-Grant;21;Forward;874;England;4;0;22;39;58;37;Huddersfield Town
-Florin Andone;26;Forward;874;Romania;3;0;13;39;57;39;Brighton & Hove Albion
-Marouane Fellaini;31;Midfielder;744;Belgium;0;1;13;39;54;47;Manchester United
-Miguel Almirón;25;Midfielder;763;Paraguay;0;0;10;39;53;48;Newcastle United
-Fabian Delph;29;Midfielder;725;England;0;1;9;39;54;48;Manchester City
-Manuel Lanzini;26;Midfielder;688;Argentina;1;1;11;39;55;47;West Ham United
-Robbie Brady;27;Midfielder;715;Republic of Ireland;0;1;12;39;54;47;Burnley
-Lewis Cook;22;Midfielder;721;England;0;0;10;39;53;48;AFC Bournemouth
-Leon Balogun;31;Defender;591;Nigeria;1;0;9;39;53;56;Brighton & Hove Albion
-Diego Rico;26;Defender;607;Spain;0;0;18;39;53;54;AFC Bournemouth
-Serge Aurier;26;Defender;564;Ivory Coast;0;2;9;39;54;56;Tottenham Hotspur
-Joel Ward;29;Defender;551;England;1;0;12;39;53;55;Crystal Palace
-Christian Benteke;28;Forward;813;Belgium;1;1;10;38;56;39;Crystal Palace
-Michy Batshuayi;26;Forward;756;Belgium;5;0;11;38;58;38;Crystal Palace
-Sean Longstaff;22;Midfielder;688;England;1;0;8;38;54;47;Newcastle United
-Petr Čech;37;Goalkeeper;585;Czech Republic;0;0;8;38;52;51;Arsenal
-Marcus Bettinelli;27;Goalkeeper;630;England;0;0;19;38;53;49;Fulham
-Morgan Gibbs-White;19;Midfielder;647;England;0;1;9;38;54;47;Wolverhampton Wanderers
-Kevin Long;29;Defender;513;Republic of Ireland;0;1;7;38;53;55;Burnley
-Jose Izquierdo;27;Forward;794;Colombia;0;1;8;37;54;39;Brighton & Hove Albion
-Andreas Pereira;23;Midfielder;595;Brazil;1;1;10;37;54;46;Manchester United
-Grady Diangana;21;Midfielder;604;England;0;1;11;37;54;46;West Ham United
-Daniel Amartey;24;Midfielder;640;Ghana;0;0;9;37;53;47;Leicester City
-Hamza Choudhury;22;Midfielder;596;England;0;0;4;37;52;47;Leicester City
-Antonio Valencia;34;Defender;466;Ecuador;0;0;5;37;52;55;Manchester United
-Matteo Darmian;29;Defender;443;Italy;0;0;7;37;52;54;Manchester United
-Kyle Walker-Peters;22;Defender;374;England;0;3;4;37;54;54;Tottenham Hotspur
-Kenneth Dahrup Zohorè;25;Forward;746;Denmark;1;1;15;36;55;37;Cardiff City
-Rachid Ghezzal;27;Forward;738;Algeria;1;0;12;36;54;37;Leicester City
-Fernando Llorente Torres;34;Forward;683;Spain;1;4;8;36;58;37;Tottenham Hotspur
-Ivan Ricardo Neves Abreu Cavaleiro;26;Forward;683;Portugal;3;1;10;36;57;37;Wolverhampton Wanderers
-Aboubakar Kamara;24;Forward;687;France;3;0;16;36;56;36;Fulham
-Ben Hamer;31;Goalkeeper;553;England;0;0;20;36;52;48;Huddersfield Town
-Mason Holgate;23;Defender;407;England;0;0;9;36;52;53;Everton
-Caglar Söyüncü;23;Defender;371;Turkey;0;0;3;36;51;54;Leicester City
-Leighton Baines;34;Defender;376;England;0;0;6;36;51;54;Everton
-Jack Simpson;22;Defender;403;England;0;0;9;36;52;53;AFC Bournemouth
-Victor Wanyama;28;Midfielder;509;Kenya;1;0;3;35;53;46;Tottenham Hotspur
-Leandro Bacuna;28;Midfielder;554;Curaçao;0;0;11;35;52;45;Cardiff City
-Moussa Dembele;32;Midfielder;516;Belgium;0;0;5;35;52;46;Tottenham Hotspur
-Tom Cleverley;30;Midfielder;470;England;1;0;7;35;53;45;Watford
-Alberto Moreno;27;Defender;155;Spain;0;0;2;32;50;51;Liverpool
-Phil Jagielka;37;Defender;329;England;1;0;2;35;52;54;Everton
-Ademola Lookman;22;Forward;601;England;0;2;7;34;55;36;Everton
-Floyd Ayité;30;Midfielder;465;Togo;1;0;13;34;53;43;Fulham
-Steven Defour;31;Midfielder;452;Belgium;0;0;12;34;52;43;Burnley
-David Button;30;Goalkeeper;360;England;0;0;5;34;51;49;Brighton & Hove Albion
-Danny Simpson;32;Defender;291;England;0;0;4;34;51;53;Leicester City
-Joselu;29;Forward;586;Spain;2;0;12;33;54;35;Newcastle United
-Adam Lallana;31;Midfielder;465;England;0;0;2;35;52;46;Liverpool
-Rajiv van La Parra;28;Midfielder;407;Netherlands;0;0;6;33;52;44;Huddersfield Town
-Stefan Marius Johansen;28;Midfielder;412;Norway;0;0;11;33;52;43;Fulham
-Callum Hudson-Odoi;18;Midfielder;391;England;0;1;5;33;52;44;Chelsea
-Kadeem Harris;26;Midfielder;366;England;1;0;5;33;52;44;Cardiff City
-Jack Wilshere;27;Midfielder;389;England;0;1;8;33;52;43;West Ham United
-Mohamed Elneny;27;Midfielder;381;Egypt;0;0;4;33;51;44;Arsenal
-Jason Puncheon;33;Midfielder;391;England;0;0;8;33;51;43;Huddersfield Town
-Paulo Gazzaniga;27;Goalkeeper;270;Argentina;0;0;1;33;51;48;Tottenham Hotspur
-Stephen Ward;34;Defender;230;Republic of Ireland;0;0;6;33;51;51;Burnley
-Faustino Marcos Alberto Rojo;29;Defender;211;Argentina;0;0;4;33;51;52;Manchester United
-Christian Fuchs;33;Defender;206;Austria;0;0;4;33;51;52;Leicester City
-Yoshinori Muto;27;Forward;516;Japan;1;0;10;32;53;35;Newcastle United
-Adama Diakhaby;23;Forward;551;France;0;0;16;32;52;34;Huddersfield Town
-Lucas Perez;31;Forward;468;Spain;3;0;9;32;55;34;West Ham United
-Andriy Yarmolenko;30;Forward;459;Ukraine;2;0;4;32;54;35;West Ham United
-Phil Foden;19;Midfielder;327;England;1;0;0;32;52;44;Manchester City
-Håvard Nordtveit;29;Midfielder;361;Norway;0;1;9;32;52;43;Fulham
-Domingos Quina;19;Midfielder;335;Portugal;1;0;5;32;52;43;Watford
-Carl Jenkinson;27;Defender;166;England;0;0;2;32;50;51;Arsenal
-Miguel Ángel Britos Cabrera;34;Defender;185;Uruguay;0;0;5;32;50;51;Watford
-Konstantinos Mavropanos;21;Defender;150;Greece;0;0;1;32;50;51;Arsenal
-Loris Karius;26;Goalkeeper;0;Germany;0;0;0;28;50;45;Liverpool
-Tyrone Mings;26;Defender;141;England;0;0;4;32;50;51;AFC Bournemouth
-Manolo Gabbiadini;27;Forward;470;Italy;1;0;11;31;53;34;Southampton
-Danny Ward;28;Forward;440;England;1;0;11;31;53;33;Cardiff City
-Andy Carroll;30;Forward;454;England;0;0;6;31;52;35;West Ham United
-Simon Mignolet;31;Goalkeeper;0;Belgium;0;0;0;28;50;45;Liverpool
-Samir Nasri;32;Midfielder;246;France;0;2;2;31;53;43;West Ham United
-Jacob Murphy;24;Midfielder;300;England;0;1;7;31;52;42;Newcastle United
-Nathaniel Chalobah;24;Midfielder;266;England;0;0;5;31;51;42;Watford
-Willy Caballero;38;Goalkeeper;180;Argentina;0;0;0;31;50;47;Chelsea
-Michel Vorm;36;Goalkeeper;180;Netherlands;0;0;4;31;50;46;Tottenham Hotspur
-Fabricio Martín Agosto Ramírez;31;Goalkeeper;180;Spain;0;0;5;31;50;46;Fulham
-Mark Travers;20;Goalkeeper;180;Republic of Ireland;0;0;5;31;50;46;AFC Bournemouth
-Davide Zappacosta;27;Defender;125;Italy;0;0;0;31;50;51;Chelsea
-Jazz Richards;28;Defender;128;Wales;0;0;4;31;50;50;Cardiff City
-Marc Navarro Ceciliano;24;Defender;84;Spain;0;0;2;31;50;50;Watford
-Ben Gibson;26;Defender;63;England;1;0;3;31;51;50;Burnley
-Joshua Sims;22;Midfielder;209;England;0;1;5;30;52;41;Southampton
-Carlos Sánchez;33;Midfielder;240;Colombia;0;0;2;30;51;42;West Ham United
-Oliver Skipp;19;Midfielder;216;England;0;0;0;30;51;43;Tottenham Hotspur
-Vicente Iborra De La Fuente;31;Midfielder;226;Spain;0;0;4;30;51;42;Leicester City
-Demeaco Duhaney;21;Defender;46;England;0;0;0;30;50;50;Huddersfield Town
-Gary Cahill;33;Defender;22;England;0;0;0;30;50;50;Chelsea
-Sebastian Prödl;32;Defender;13;Austria;0;0;0;30;50;50;Watford
-Antonio Barreca;24;Defender;4;Italy;0;0;0;30;50;50;Newcastle United
-Alfie Jones;22;Defender;0;England;0;0;0;30;50;50;Southampton
-Ali Koiki;19;Defender;0;England;0;0;0;30;50;50;Burnley
-Anthony Driscoll-Glennon;19;Defender;0;England;0;0;0;30;50;50;Burnley
-Ben White;22;Defender;0;England;0;0;0;30;50;50;Brighton & Hove Albion
-Cameron John;20;Defender;0;England;0;0;0;30;50;50;Wolverhampton Wanderers
-Dan Burn;27;Defender;0;England;0;0;0;30;50;50;Brighton & Hove Albion
-Jaïro Riedewald;23;Defender;0;Netherlands;0;0;0;30;50;50;Crystal Palace
-James Garner;18;Defender;0;England;0;0;0;30;50;50;Manchester United
-Jamie Sterry;23;Defender;0;England;0;0;0;30;50;50;Newcastle United
-Josh Knight;22;Defender;0;England;0;0;0;30;50;50;Leicester City
-Kortney Hause;24;Defender;0;England;0;0;0;30;50;50;Wolverhampton Wanderers
-Lewis Cass;19;Defender;0;England;0;0;0;30;50;50;Newcastle United
-Marc Guehi;19;Defender;0;England;0;0;0;30;50;50;Chelsea
-Markus Suttner;32;Defender;0;Austria;0;0;0;30;50;50;Brighton & Hove Albion
-Matthew Connolly;32;Defender;0;England;0;0;0;30;50;50;Cardiff City
-Max Kilman;22;Defender;0;England;0;0;0;30;50;50;Wolverhampton Wanderers
-Nikola Tavares;20;Defender;0;England;0;0;0;30;50;50;Crystal Palace
-Pape N'Diaye Souaré;29;Defender;0;Senegal;0;0;0;30;50;50;Crystal Palace
-Sam Woods;21;Defender;0;England;0;0;0;30;50;50;Crystal Palace
-Timothy Eyoma;19;Defender;0;England;0;0;0;30;50;50;Tottenham Hotspur
-Tyias Browning;25;Defender;0;England;0;0;0;30;50;50;Everton
-Tyreke Johnson;21;Defender;0;England;0;0;0;30;50;50;Southampton
-Zechariah Medley;19;Defender;0;England;0;0;0;30;50;50;Arsenal
-Zeze  Steven Sessegnon;19;Defender;0;England;0;0;0;30;50;50;Fulham
-Ben Wilmot;20;Defender;26;England;0;0;2;30;50;49;Watford
-Philippe Sandler;22;Defender;0;Netherlands;0;0;0;30;50;50;Manchester City
-Dominic Solanke;22;Forward;341;England;0;1;4;29;52;33;AFC Bournemouth
-Lys Mousset;23;Forward;345;France;1;0;13;29;52;32;AFC Bournemouth
-Matěj Vydra;27;Forward;311;Czech Republic;1;1;4;29;53;33;Burnley
-Cesc Fabregas;32;Midfielder;175;Spain;0;0;2;29;50;42;Chelsea
-Joel Coleman;24;Goalkeeper;90;England;0;0;1;29;50;46;Huddersfield Town
-John Ruddy;33;Goalkeeper;90;England;0;0;0;29;50;46;Wolverhampton Wanderers
-Fraser Forster;31;Goalkeeper;90;England;0;0;3;29;50;45;Southampton
-Julián Speroni;40;Goalkeeper;90;Argentina;0;0;3;29;50;45;Crystal Palace
-Shinji Okazaki;33;Forward;269;Japan;0;1;1;28;52;33;Leicester City
-Steven Davis;34;Midfielder;96;Northern Ireland;0;1;3;28;51;40;Southampton
-Callum Slattery;20;Midfielder;110;England;0;0;0;28;50;41;Southampton
-Mason Greenwood;18;Midfielder;115;England;0;0;2;28;50;41;Manchester United
-Neeskens Kebano;27;Midfielder;103;Congo DR;0;0;1;28;50;41;Fulham
-Daniel Williams;30;Midfielder;93;USA;0;0;1;28;50;41;Huddersfield Town
-Kayne Ramsey;19;Midfielder;90;England;0;0;3;28;50;40;Southampton
-Adrien Sebastian Perruchet Silva;30;Midfielder;88;Portugal;0;0;1;28;50;41;Leicester City
-Ibrahima Cissé;25;Midfielder;87;Belgium;0;0;3;28;50;40;Fulham
-Adrián;32;Goalkeeper;0;Spain;0;0;0;28;50;45;West Ham United
-Alex Smithies;29;Goalkeeper;0;England;0;0;0;28;50;45;Cardiff City
-Alfie Whiteman;21;Goalkeeper;0;England;0;0;0;28;50;45;Tottenham Hotspur
-Brian Murphy;36;Goalkeeper;0;Republic of Ireland;0;0;0;28;50;45;Cardiff City
-Danny Ward;26;Goalkeeper;0;Wales;0;0;0;28;50;45;Leicester City
-Emiliano Martínez;27;Goalkeeper;0;Argentina;0;0;0;28;50;45;Arsenal
-Freddie Woodman;22;Goalkeeper;0;England;0;0;0;28;50;45;Newcastle United
-Heurelho da Silva Gomes;38;Goalkeeper;0;Brazil;0;0;0;28;50;45;Watford
-Jason Steele;29;Goalkeeper;0;England;0;0;0;28;50;45;Brighton & Hove Albion
-Joe Daniel Tupper;21;Goalkeeper;0;England;0;0;0;28;50;45;Crystal Palace
-Karl Darlow;29;Goalkeeper;0;England;0;0;0;28;50;45;Newcastle United
-Lee Grant;36;Goalkeeper;0;England;0;0;0;28;50;45;Manchester United
-Alex Oxlade-Chamberlain;26;Midfielder;19;England;0;0;0;27;50;40;Liverpool
-Maarten Stekelenburg;37;Goalkeeper;0;Netherlands;0;0;0;28;50;45;Everton
-Ryan Schofield;19;Goalkeeper;0;England;0;0;0;28;50;45;Huddersfield Town
-Sergio Romero;32;Goalkeeper;0;Argentina;0;0;0;28;50;45;Manchester United
-Curtis Jones;18;Midfielder;0;England;0;0;0;27;50;40;Liverpool
-Will Norris;26;Goalkeeper;0;England;0;0;0;28;50;45;Wolverhampton Wanderers
-Arijanet Muric;20;Goalkeeper;0;Montenegro;0;0;0;28;50;45;Manchester City
-Claudio Bravo;36;Goalkeeper;0;Chile;0;0;0;28;50;45;Manchester City
-Denis Suárez;25;Midfielder;67;Spain;0;0;0;27;50;40;Arsenal
-Joseph Willock;20;Midfielder;64;England;0;0;0;27;50;40;Arsenal
-Matty Daly;18;Midfielder;73;England;0;0;1;27;50;40;Huddersfield Town
-Fousseni Diabaté;24;Midfielder;55;Mali;0;0;1;27;50;40;Leicester City
-Abdelhamid Sabiri;22;Midfielder;49;Morocco;0;0;3;27;50;40;Huddersfield Town
-Lazar Marković;25;Midfielder;44;Serbia;0;0;0;27;50;40;Fulham
-Bakary Sako;31;Midfielder;25;Mali;0;0;0;27;50;40;Crystal Palace
-Rafael Euclides Soares Camacho;19;Midfielder;0;Portugal;0;0;0;27;50;40;Liverpool
-James McCarthy;28;Midfielder;14;Republic of Ireland;0;0;0;27;50;40;Everton
-Luke Amos;22;Midfielder;2;England;0;0;0;27;50;40;Tottenham Hotspur
-Conor Coventry;19;Midfielder;0;Republic of Ireland;0;0;0;27;50;40;West Ham United
-Daniel Sturridge;30;Forward;496;England;2;1;3;33;55;36;Liverpool
-Danny Drinkwater;29;Midfielder;0;England;0;0;0;27;50;40;Chelsea
-Emile Smith Rowe;19;Midfielder;0;England;0;0;0;27;50;40;Arsenal
-Ethan Ampadu;19;Midfielder;0;Wales;0;0;0;27;50;40;Chelsea
-George Marsh;20;Midfielder;0;England;0;0;0;27;50;40;Tottenham Hotspur
-Jayson Molumby;20;Midfielder;0;Republic of Ireland;0;0;0;27;50;40;Brighton & Hove Albion
-Josh Benson;19;Midfielder;0;England;0;0;0;27;50;40;Burnley
-Kelland Watts;20;Midfielder;0;England;0;0;0;27;50;40;Newcastle United
-Kieran Dowell;22;Midfielder;0;England;0;0;0;27;50;40;Everton
-Kyle Taylor;20;Midfielder;0;England;0;0;0;27;50;40;AFC Bournemouth
-Luca de la Torre;21;Midfielder;0;USA;0;0;0;27;50;40;Fulham
-Luke Dreher;20;Midfielder;0;England;0;0;0;27;50;40;Crystal Palace
-Marc Pugh;32;Midfielder;0;England;0;0;0;27;50;40;AFC Bournemouth
-Matt Butcher;22;Midfielder;0;England;0;0;0;27;50;40;AFC Bournemouth
-Max Harrison Sanders;20;Midfielder;0;England;0;0;0;27;50;40;Brighton & Hove Albion
-Nathan Holland;21;Midfielder;0;England;0;0;0;27;50;40;West Ham United
-Nnamdi Ofoborh;19;Midfielder;0;England;0;0;0;27;50;40;AFC Bournemouth
-Divock Origi;24;Forward;366;Belgium;3;1;2;31;55;34;Liverpool
-Ryan Giles;19;Midfielder;0;England;0;0;0;27;50;40;Wolverhampton Wanderers
-Sullay Kaikai;24;Midfielder;0;England;0;0;0;27;50;40;Crystal Palace
-Emerson Hyndman;23;Midfielder;37;USA;0;0;2;27;50;40;AFC Bournemouth
-Victor Moses;28;Midfielder;26;Nigeria;0;0;1;27;50;40;Chelsea
-Angel Gomes;19;Midfielder;25;England;0;0;1;27;50;40;Manchester United
-Alexander Sørloth;23;Forward;173;Norway;0;0;1;26;50;32;Crystal Palace
-Danny Welbeck;28;Forward;147;England;1;1;2;26;52;31;Arsenal
-Michael Obafemi;19;Forward;134;Republic of Ireland;1;1;2;26;52;31;Southampton
-Leonardo Bonatini Lohner Maia;25;Forward;128;Brazil;0;1;0;26;51;31;Wolverhampton Wanderers
-Loïc Damour;28;Midfielder;21;France;0;0;2;26;50;39;Cardiff City
-Peter Crouch;38;Forward;86;England;0;0;0;25;50;31;Burnley
-Connor Wickham;26;Forward;61;England;0;1;0;25;51;30;Crystal Palace
-Edward Nketiah;20;Forward;62;England;1;0;2;25;51;30;Arsenal
-Georges-Kevin N'Koudou Mbida;24;Forward;4;France;0;1;0;24;51;30;Tottenham Hotspur
-Ramadan Sobhi;22;Forward;75;Egypt;0;0;1;24;50;30;Huddersfield Town
-Aaron Rowe;19;Forward;69;England;0;0;1;24;50;30;Huddersfield Town
-Ben Johnson;19;Forward;63;England;0;0;1;24;50;30;West Ham United
-Rhys Healey;24;Forward;49;England;0;0;1;24;50;30;Cardiff City
-Tahith Chong;19;Forward;36;Netherlands;0;0;1;24;50;30;Manchester United
-Vincent Janssen;25;Forward;36;Netherlands;0;0;0;24;50;30;Tottenham Hotspur
-Sam Gallagher;24;Forward;30;England;0;0;0;24;50;30;Southampton
-Alexandre Nascimento Costa Silva;22;Forward;17;Portugal;0;0;0;24;50;30;West Ham United
-Sam Surridge;21;Forward;11;England;0;0;0;24;50;30;AFC Bournemouth
-Adalberto Peñaranda Maestre;22;Forward;0;Venezuela;0;0;0;24;50;30;Watford
-Bright Enobakhare;21;Forward;0;England;0;0;0;24;50;30;Wolverhampton Wanderers
-Callum Roberts;22;Forward;0;England;0;0;0;24;50;30;Newcastle United
-Joe Powell;21;Forward;0;England;0;0;0;24;50;30;West Ham United
-Jonathan Walters;36;Forward;0;Republic of Ireland;0;0;0;24;50;30;Burnley
-Kazaiah Sterling;20;Forward;0;England;0;0;0;24;50;30;Tottenham Hotspur
-Sandro Ramirez;24;Forward;0;Spain;0;0;0;24;50;30;Everton
-Viktor Gyökeres;21;Forward;0;Sweden;0;0;0;24;50;30;Brighton & Hove Albion
-Collin Quaner;28;Forward;37;Germany;0;0;2;24;50;30;Huddersfield Town
-Gary Madine;29;Forward;32;England;0;0;2;24;50;30;Cardiff City
-Stefano Okaka;30;Forward;22;Italy;0;0;1;24;50;30;Watford
-Jermain Defoe;37;Forward;21;England;0;0;2;23;50;29;AFC Bournemouth
+﻿name;age;position;nationality;club
+Virgil van Dijk;28;Defender;Netherlands;Liverpool
+Cesar Azpilicueta;30;Defender;Spain;Chelsea
+Andrew Robertson;25;Defender;Scotland;Liverpool
+Alisson Becker;27;Goalkeeper;Brazil;Liverpool
+Luka Milivojević;28;Midfielder;Serbia;Crystal Palace
+Ederson;26;Goalkeeper;Brazil;Manchester City
+Trent Alexander-Arnold;21;Defender;England;Liverpool
+Nathan Aké;24;Defender;Netherlands;AFC Bournemouth
+Ben Mee;30;Defender;England;Burnley
+Jordan Pickford;25;Goalkeeper;England;Everton
+Kasper Schmeichel;32;Goalkeeper;Denmark;Leicester City
+Martin Dúbravka;30;Goalkeeper;Slovakia;Newcastle United
+Bruno Écuélé Manga;31;Defender;Gabon;Cardiff City
+Ben Chilwell;22;Defender;England;Leicester City
+David Luiz;32;Defender;Brazil;Chelsea
+Łukasz Fabiański;34;Goalkeeper;Poland;West Ham United
+David de Gea;28;Goalkeeper;Spain;Manchester United
+Ben Foster;36;Goalkeeper;England;Watford
+Neil Leonard Dula Etheridge;29;Goalkeeper;Philippines;Cardiff City
+Patrick van Aanholt;29;Defender;Netherlands;Crystal Palace
+Ryan Fraser;25;Midfielder;Scotland;AFC Bournemouth
+Matt Doherty;27;Defender;Republic of Ireland;Wolverhampton Wanderers
+Gylfi Sigurdsson;30;Midfielder;Iceland;Everton
+Eden Hazard;28;Midfielder;Belgium;Chelsea
+Conor Coady;26;Midfielder;England;Wolverhampton Wanderers
+Rui Patrício;31;Goalkeeper;Portugal;Wolverhampton Wanderers
+Charlie Taylor;26;Defender;England;Burnley
+Nathan Redmond;25;Midfielder;England;Southampton
+Willy Boly;28;Defender;France;Wolverhampton Wanderers
+Ricardo Pereira;26;Defender;Portugal;Leicester City
+Georginio Wijnaldum;28;Midfielder;Netherlands;Liverpool
+Aymeric Laporte;25;Defender;France;Manchester City
+Paul Pogba;26;Midfielder;France;Manchester United
+Kepa Arrizabalaga;25;Goalkeeper;Spain;Chelsea
+Christopher Schindler;29;Defender;Germany;Huddersfield Town
+Jack Cork;30;Midfielder;England;Burnley
+Wilfred Ndidi;22;Midfielder;Nigeria;Leicester City
+Shane Duffy;27;Defender;Republic of Ireland;Brighton & Hove Albion
+Lewis Dunk;27;Defender;England;Brighton & Hove Albion
+James Tarkowski;26;Defender;England;Burnley
+Craig Cathcart;30;Defender;Northern Ireland;Watford
+Raúl Jiménez;28;Forward;Mexico;Wolverhampton Wanderers
+Ryan Bennett;29;Defender;England;Wolverhampton Wanderers
+Wilfried Zaha;26;Midfielder;Ivory Coast;Crystal Palace
+Felipe Anderson;26;Midfielder;Brazil;West Ham United
+Lucas Digne;26;Defender;France;Everton
+Aleksandar Mitrović;25;Forward;Serbia;Fulham
+N'Golo Kanté;28;Midfielder;France;Chelsea
+Sean Morrison;28;Defender;England;Cardiff City
+James McArthur;32;Midfielder;Scotland;Crystal Palace
+Jorginho;27;Midfielder;Italy;Chelsea
+Aaron Wan-Bissaka;21;Midfielder;England;Crystal Palace
+Abdoulaye Doucouré;26;Midfielder;France;Watford
+Andros Townsend;28;Midfielder;England;Crystal Palace
+João Moutinho;33;Midfielder;Portugal;Wolverhampton Wanderers
+Michael Keane;26;Defender;England;Everton
+Issa Diop;22;Defender;France;West Ham United
+Bernardo Silva;25;Midfielder;Portugal;Manchester City
+Mathew Ryan;27;Goalkeeper;Australia;Brighton & Hove Albion
+Rúben Neves;22;Midfielder;Portugal;Wolverhampton Wanderers
+Toby Alderweireld;30;Defender;Belgium;Tottenham Hotspur
+Matt Ritchie;30;Midfielder;Scotland;Newcastle United
+Raheem Sterling;24;Forward;England;Manchester City
+Christian Eriksen;27;Midfielder;Denmark;Tottenham Hotspur
+Declan Rice;20;Midfielder;Republic of Ireland;West Ham United
+Hugo Lloris;32;Goalkeeper;France;Tottenham Hotspur
+Antonio Rüdiger;26;Defender;Germany;Chelsea
+James Maddison;22;Midfielder;England;Leicester City
+Kyle Walker;29;Defender;England;Manchester City
+Marcos Alonso;28;Defender;Spain;Chelsea
+Joshua King;27;Forward;Norway;AFC Bournemouth
+Ayoze Perez;26;Forward;Spain;Newcastle United
+Étienne Capoue;31;Midfielder;France;Watford
+Jonny;25;Defender;Spain;Wolverhampton Wanderers
+Pierre-Emerick Aubameyang;30;Forward;Gabon;Arsenal
+Bernd Leno;27;Goalkeeper;Germany;Arsenal
+Steve Cook;28;Defender;England;AFC Bournemouth
+Ashley Westwood;29;Midfielder;England;Burnley
+Jamaal Lascelles;25;Defender;England;Newcastle United
+Jamie Vardy;32;Forward;England;Leicester City
+Mohamed Salah;27;Forward;Egypt;Liverpool
+Idrissa Gueye;30;Midfielder;Senegal;Everton
+Sergio Aguero;31;Forward;Argentina;Manchester City
+Jonas Lössl;30;Goalkeeper;Denmark;Huddersfield Town
+Pierre-Emile Højbjerg;24;Midfielder;Denmark;Southampton
+Terence Kongolo;25;Defender;Netherlands;Huddersfield Town
+Sadio Mané;27;Forward;Senegal;Liverpool
+Kurt Zouma;25;Defender;France;Everton
+Luke Shaw;24;Defender;England;Manchester United
+Shkodran Mustafi;27;Defender;Germany;Arsenal
+Victor Lindelöf;25;Defender;Sweden;Manchester United
+Joe Bennett;29;Defender;England;Cardiff City
+Joel Matip;28;Defender;Cameroon;Liverpool
+Séamus Coleman;31;Defender;Republic of Ireland;Everton
+Richarlison;22;Forward;Brazil;Everton
+Harry Maguire;26;Defender;England;Leicester City
+Rondon;30;Forward;Venezuela;Newcastle United
+James Tomkins;30;Defender;England;Crystal Palace
+Roberto Pereyra;28;Forward;Argentina;Watford
+Denis Odoi;31;Defender;Belgium;Fulham
+Callum Wilson;27;Forward;England;AFC Bournemouth
+Calum Chambers;24;Defender;England;Fulham
+Souleymane Bamba;34;Defender;Ivory Coast;Cardiff City
+Alexandre Lacazette;28;Forward;France;Arsenal
+José Holebas;35;Defender;Greece;Watford
+David Silva;33;Midfielder;Spain;Manchester City
+Sergio Rico;26;Goalkeeper;Spain;Fulham
+Víctor Camarasa;25;Midfielder;Spain;Cardiff City
+DeAndre Yedlin;26;Defender;USA;Newcastle United
+Harry Kane;26;Forward;England;Tottenham Hotspur
+Troy Deeney;31;Forward;England;Watford
+Chris Wood;27;Forward;New Zealand;Burnley
+Ashley Young;34;Midfielder;England;Manchester United
+Granit Xhaka;27;Midfielder;Switzerland;Arsenal
+Mamadou Sakho;29;Defender;France;Crystal Palace
+Diogo José Teixeira da Silva;22;Midfielder;Portugal;Wolverhampton Wanderers
+Glenn Murray;36;Forward;England;Brighton & Hove Albion
+Davy Pröpper;28;Midfielder;Netherlands;Brighton & Hove Albion
+Solly March;25;Midfielder;England;Brighton & Hove Albion
+Will Hughes;24;Midfielder;England;Watford
+Kieran Trippier;29;Defender;England;Tottenham Hotspur
+Ryan Sessegnon;19;Defender;England;Fulham
+Jefferson Lerma;25;Midfielder;Colombia;AFC Bournemouth
+Dale Stephens;30;Midfielder;England;Brighton & Hove Albion
+Joe Bryan;26;Defender;England;Fulham
+Fernandinho;34;Midfielder;Brazil;Manchester City
+Marcus Rashford;22;Forward;England;Manchester United
+Ashley Barnes;29;Forward;England;Burnley
+Mark Noble;32;Midfielder;England;West Ham United
+Nemanja Matić;31;Midfielder;Serbia;Manchester United
+Lucas Torreira;23;Midfielder;Uruguay;Arsenal
+Moussa Sissoko;30;Midfielder;France;Tottenham Hotspur
+Sokratis Papastathopoulos;31;Defender;Greece;Arsenal
+Jonathan Hogg;30;Midfielder;England;Huddersfield Town
+Aaron Mooy;29;Midfielder;Australia;Huddersfield Town
+Maxime Le Marchand;30;Defender;France;Fulham
+Robert Snodgrass;32;Midfielder;Scotland;West Ham United
+Mathias Jørgensen;29;Defender;Denmark;Huddersfield Town
+Lucas Moura;27;Midfielder;Brazil;Tottenham Hotspur
+Aron Einar Gunnarsson;30;Midfielder;Iceland;Cardiff City
+Alex McCarthy;29;Goalkeeper;England;Southampton
+Ryan Bertrand;30;Defender;England;Southampton
+Jan Bednarek;23;Defender;Poland;Southampton
+Martín Montoya;28;Defender;Spain;Brighton & Hove Albion
+Chris Smalling;29;Defender;England;Manchester United
+İlkay Gündoğan;29;Midfielder;Germany;Manchester City
+Fabian Schär;27;Defender;Switzerland;Newcastle United
+David Brooks;22;Forward;England;AFC Bournemouth
+Jean Michauebl Seri;28;Midfielder;Ivory Coast;Fulham
+Adam Smith;28;Defender;England;AFC Bournemouth
+Pablo Zabaleta;34;Defender;Argentina;West Ham United
+Michail Antonio;29;Midfielder;England;West Ham United
+Leroy Sané;23;Midfielder;Germany;Manchester City
+Philip Billing;23;Midfielder;Denmark;Huddersfield Town
+Asmir Begović;32;Goalkeeper;Bosnia and Herzegovina;AFC Bournemouth
+Bernard Anício Caldeira Duarte;27;Midfielder;Brazil;Everton
+Jannik Vestergaard;27;Defender;Denmark;Southampton
+Heung-Min Son;27;Forward;South Korea;Tottenham Hotspur
+Chris Löwe;30;Defender;Germany;Huddersfield Town
+Erik Durm;27;Defender;Germany;Huddersfield Town
+Tim Ream;32;Defender;USA;Fulham
+Gerard Deulofeu;25;Forward;Spain;Watford
+Jonny Evans;31;Defender;Northern Ireland;Leicester City
+Callum Paterson;25;Defender;Scotland;Cardiff City
+Fabián Balbuena;28;Defender;Paraguay;West Ham United
+Tom Cairney;28;Midfielder;Scotland;Fulham
+Romelu Lukaku;26;Forward;Belgium;Manchester United
+Oriol Romeu;28;Midfielder;Spain;Southampton
+Mohamed Diamé;32;Midfielder;Senegal;Newcastle United
+Matteo Guendouzi;20;Midfielder;France;Arsenal
+Paul Dummett;28;Defender;Wales;Newcastle United
+Fabinho;26;Midfielder;Brazil;Liverpool
+Sead Kolašinac;26;Defender;Bosnia and Herzegovina;Arsenal
+Davinson Sánchez;23;Defender;Colombia;Tottenham Hotspur
+Wes Morgan;35;Defender;Jamaica;Leicester City
+Jan Vertonghen;32;Defender;Belgium;Tottenham Hotspur
+Nacho Monreal;33;Defender;Spain;Arsenal
+Willian;31;Forward;Brazil;Chelsea
+Alex Pritchard;26;Midfielder;England;Huddersfield Town
+Jeff Hendrick;27;Midfielder;Republic of Ireland;Burnley
+Nampalys Mendy;27;Midfielder;France;Leicester City
+Marko Arnautović;30;Forward;Austria;West Ham United
+Demarai Gray;23;Midfielder;England;Leicester City
+Jordan Henderson;29;Midfielder;England;Liverpool
+Angelo Ogbonna;31;Defender;Italy;West Ham United
+Adrian Mariappa;33;Defender;Jamaica;Watford
+Cyrus Christie;27;Defender;Republic of Ireland;Fulham
+Danny Rose;29;Defender;England;Tottenham Hotspur
+Theo Walcott;30;Forward;England;Everton
+Kiko Femenía;28;Midfielder;Spain;Watford
+André Gomes;26;Midfielder;Portugal;Everton
+Harry Arter;29;Midfielder;Republic of Ireland;Cardiff City
+James Ward-Prowse;24;Midfielder;England;Southampton
+Ben Davies;26;Defender;Wales;Tottenham Hotspur
+David Junior Hoilett;29;Forward;Canada;Cardiff City
+Alex Iwobi;23;Forward;Nigeria;Arsenal
+Pascal Groß;28;Midfielder;Germany;Brighton & Hove Albion
+Isaac Hayden;24;Midfielder;England;Newcastle United
+Cheikhou Kouyaté;29;Midfielder;Senegal;Crystal Palace
+Florent Hadergjonaj;25;Defender;Switzerland;Huddersfield Town
+Gaëtan Bong Songo;31;Defender;Cameroon;Brighton & Hove Albion
+Joe Gomez;22;Defender;England;Liverpool
+Dele Alli;23;Midfielder;England;Tottenham Hotspur
+Anthony Knockaert;27;Midfielder;France;Brighton & Hove Albion
+Arthur Masuaku;25;Defender;France;West Ham United
+John Stones;25;Defender;England;Manchester City
+Pedro Rodriguez;32;Midfielder;Spain;Chelsea
+Joe Ralls;26;Midfielder;England;Cardiff City
+Yan Valery;20;Defender;France;Southampton
+Bernardo;24;Defender;Brazil;Brighton & Hove Albion
+Matthew Lowton;30;Defender;England;Burnley
+Johann Berg Guðmunds­son;29;Midfielder;Iceland;Burnley
+Jeffrey Schlupp;26;Defender;Ghana;Crystal Palace
+Vicente Guaita;32;Goalkeeper;Spain;Crystal Palace
+Mesut Özil;31;Midfielder;Germany;Arsenal
+Phil Bardsley;34;Defender;Scotland;Burnley
+Jack Stephens;25;Defender;England;Southampton
+Tom Heaton;33;Goalkeeper;England;Burnley
+Mateo Kovačić;25;Midfielder;Croatia;Chelsea
+Henrikh Mkhitaryan;30;Midfielder;Armenia;Arsenal
+Jesse Lingard;26;Midfielder;England;Manchester United
+Aaron Cresswell;29;Defender;England;West Ham United
+Hector Bellerin;24;Defender;Spain;Arsenal
+Roberto Firmino;28;Forward;Brazil;Liverpool
+Josh Murphy;24;Forward;England;Cardiff City
+Joe Hart;32;Goalkeeper;England;Burnley
+Dominic Calvert-Lewin;22;Forward;England;Everton
+Dan Gosling;29;Midfielder;England;AFC Bournemouth
+Yves Bissouma;23;Midfielder;Mali;Brighton & Hove Albion
+Marc Albrighton;29;Midfielder;England;Leicester City
+Christian Kabasele;28;Defender;Belgium;Watford
+Lee Peltier;32;Defender;England;Cardiff City
+Charlie Daniels;33;Defender;England;AFC Bournemouth
+Daryl Janmaat;30;Defender;Netherlands;Watford
+Anthony Martial;23;Forward;France;Manchester United
+Danny Ings;27;Forward;England;Southampton
+André Schürrle;28;Midfielder;Germany;Fulham
+Wayne Hennessey;32;Goalkeeper;Wales;Crystal Palace
+Cedric Soares;28;Defender;Portugal;Southampton
+Federico Fernández;30;Defender;Argentina;Newcastle United
+Maya Yoshida;31;Defender;Japan;Southampton
+Steve Mounié;25;Forward;Benin;Huddersfield Town
+Mario Lemina;26;Midfielder;Gabon;Southampton
+Harry Winks;23;Midfielder;England;Tottenham Hotspur
+Dwight McNeil;19;Forward;England;Burnley
+Eric Dier;25;Midfielder;England;Tottenham Hotspur
+Laurent Koscielny;34;Defender;France;Arsenal
+Riyad Mahrez;28;Midfielder;Algeria;Manchester City
+Leander Dendoncker;24;Midfielder;Belgium;Wolverhampton Wanderers
+Christian Atsu Twasam;27;Midfielder;Ghana;Newcastle United
+André-Frank Zambo Anguissa;23;Midfielder;Cameroon;Fulham
+Bobby Reid;26;Midfielder;England;Cardiff City
+Ander Herrera;30;Midfielder;Spain;Manchester United
+Stuart Armstrong;27;Midfielder;Scotland;Southampton
+Aaron Ramsey;28;Midfielder;Wales;Arsenal
+James Milner;33;Midfielder;England;Liverpool
+Max Meyer;24;Midfielder;Germany;Crystal Palace
+Phil Jones;27;Defender;England;Manchester United
+Simon Francis;34;Defender;England;AFC Bournemouth
+Nathaniel Clyne;28;Defender;England;AFC Bournemouth
+Vincent Kompany;33;Defender;Belgium;Manchester City
+Nicolas Otamendi;31;Defender;Argentina;Manchester City
+Juninho Bacuna;22;Midfielder;Netherlands;Huddersfield Town
+Andrew Surman;33;Midfielder;England;AFC Bournemouth
+Hélder Wander Sousa Azevedo Costa;25;Midfielder;Portugal;Wolverhampton Wanderers
+Robert Kenedy Nunes do Nascimento;23;Midfielder;Brazil;Newcastle United
+Ross Barkley;25;Midfielder;England;Chelsea
+Juan Mata;31;Midfielder;Spain;Manchester United
+Matt Targett;24;Defender;England;Southampton
+Andre Gray;28;Forward;England;Watford
+Javier Hernandez;31;Forward;Mexico;West Ham United
+Ki Sung-yueng;30;Midfielder;South Korea;Newcastle United
+Bruno Saltor Grau;39;Defender;Spain;Brighton & Hove Albion
+Wesley Hoedt;25;Defender;Netherlands;Southampton
+Javier Manquillo;25;Defender;Spain;Newcastle United
+Aaron Lennon;32;Midfielder;England;Burnley
+Tom Smith;27;Defender;England;Huddersfield Town
+Oleksandr Zinchenko;22;Midfielder;Ukraine;Manchester City
+Dejan Lovren;30;Defender;Croatia;Liverpool
+Martin Kelly;29;Defender;England;Crystal Palace
+Florian Lejeune;28;Defender;France;Newcastle United
+Alfie Mawson;25;Defender;England;Fulham
+Naby Keïta;24;Midfielder;Guinea;Liverpool
+Ryan Guno Babel;32;Forward;Netherlands;Fulham
+Shane Long;32;Forward;Republic of Ireland;Southampton
+Youri Tielemans;22;Midfielder;Belgium;Leicester City
+Xherdan Shaqiri;28;Midfielder;Switzerland;Liverpool
+Diogo Dalot;20;Defender;Portugal;Manchester United
+Adam Masina;25;Defender;Italy;Watford
+Benjamin Mendy;25;Defender;France;Manchester City
+Romain Saïss;29;Midfielder;Morocco;Wolverhampton Wanderers
+Angus Gunn;23;Goalkeeper;England;Southampton
+Artur Boruc;39;Goalkeeper;Poland;AFC Bournemouth
+Pedro Obiang;27;Midfielder;Equatorial Guinea;West Ham United
+Ruben Loftus-Cheek;23;Midfielder;England;Chelsea
+Jürgen Locadia;25;Forward;Netherlands;Brighton & Hove Albion
+Ryan Fredericks;27;Midfielder;England;West Ham United
+Kevin De Bruyne;28;Midfielder;Belgium;Manchester City
+Junior Stanislas;29;Midfielder;England;AFC Bournemouth
+Fred;26;Midfielder;Brazil;Manchester United
+Juan Foyth;21;Defender;Argentina;Tottenham Hotspur
+Stephan Lichtsteiner;35;Defender;Switzerland;Arsenal
+Erik Lamela;27;Midfielder;Argentina;Tottenham Hotspur
+Ciaran Clark;30;Defender;Republic of Ireland;Newcastle United
+Yerry Mina;25;Defender;Colombia;Everton
+Jordan Ayew;28;Forward;Ghana;Crystal Palace
+Gonzalo Higuain;31;Forward;Argentina;Chelsea
+Gabriel Jesus;22;Forward;Brazil;Manchester City
+Nathaniel Mendez-Laing;27;Midfielder;England;Cardiff City
+Harvey Barnes;21;Midfielder;England;Leicester City
+Chris Mepham;21;Defender;Wales;AFC Bournemouth
+Danilo;28;Defender;Brazil;Manchester City
+Elias Kachunga;27;Forward;Congo DR;Huddersfield Town
+Cenk Tosun;28;Forward;Turkey;Everton
+Ainsley Maitland-Niles;22;Midfielder;England;Arsenal
+Jonjo Shelvey;27;Midfielder;England;Newcastle United
+Beram Kayal;31;Midfielder;Israel;Brighton & Hove Albion
+Rob Holding;24;Defender;England;Arsenal
+Jonjoe Kenny;22;Defender;England;Everton
+Tom Davies;21;Midfielder;England;Everton
+Adama Traoré;23;Midfielder;Spain;Wolverhampton Wanderers
+Timothy Fosu-Mensah;21;Defender;Netherlands;Fulham
+Laurent Depoitre;30;Forward;Belgium;Huddersfield Town
+Luciano Vietto;25;Forward;Argentina;Fulham
+Charlie Austin;30;Forward;England;Southampton
+Isaac Success;23;Forward;Nigeria;Watford
+Alireza Jahanbakhsh;26;Forward;Iran;Brighton & Hove Albion
+Alvaro Morata;27;Forward;Spain;Chelsea
+Scott McTominay;22;Midfielder;England;Manchester United
+Morgan Schneiderlin;29;Midfielder;France;Everton
+Ruben Vinagre;20;Defender;Portugal;Wolverhampton Wanderers
+Scott Dann;32;Defender;England;Crystal Palace
+Jon Gorenc Stankovič;23;Defender;Slovenia;Huddersfield Town
+Emerson Palmieri;25;Defender;Italy;Chelsea
+Isaac Mbenza;23;Forward;Belgium;Huddersfield Town
+Oumar Niasse;29;Forward;Senegal;Cardiff City
+Kelechi Iheanacho;23;Forward;Nigeria;Leicester City
+Sam Vokes;30;Forward;Wales;Burnley
+Olivier Giroud;33;Forward;France;Chelsea
+Alexis Sanchez;30;Forward;Chile;Manchester United
+Kevin McDonald;30;Midfielder;Scotland;Fulham
+Ken Sema;26;Midfielder;Sweden;Watford
+Jordon Ibe;23;Midfielder;England;AFC Bournemouth
+Mohamed Elyounoussi;25;Midfielder;Norway;Southampton
+Andreas Christensen;23;Defender;Denmark;Chelsea
+Eric Bailly;25;Defender;Ivory Coast;Manchester United
+Greg Cunningham;28;Defender;Republic of Ireland;Cardiff City
+Karlan Ahearne-Grant;21;Forward;England;Huddersfield Town
+Florin Andone;26;Forward;Romania;Brighton & Hove Albion
+Marouane Fellaini;31;Midfielder;Belgium;Manchester United
+Miguel Almirón;25;Midfielder;Paraguay;Newcastle United
+Fabian Delph;29;Midfielder;England;Manchester City
+Manuel Lanzini;26;Midfielder;Argentina;West Ham United
+Robbie Brady;27;Midfielder;Republic of Ireland;Burnley
+Lewis Cook;22;Midfielder;England;AFC Bournemouth
+Leon Balogun;31;Defender;Nigeria;Brighton & Hove Albion
+Diego Rico;26;Defender;Spain;AFC Bournemouth
+Serge Aurier;26;Defender;Ivory Coast;Tottenham Hotspur
+Joel Ward;29;Defender;England;Crystal Palace
+Christian Benteke;28;Forward;Belgium;Crystal Palace
+Michy Batshuayi;26;Forward;Belgium;Crystal Palace
+Sean Longstaff;22;Midfielder;England;Newcastle United
+Petr Čech;37;Goalkeeper;Czech Republic;Arsenal
+Marcus Bettinelli;27;Goalkeeper;England;Fulham
+Morgan Gibbs-White;19;Midfielder;England;Wolverhampton Wanderers
+Kevin Long;29;Defender;Republic of Ireland;Burnley
+Jose Izquierdo;27;Forward;Colombia;Brighton & Hove Albion
+Andreas Pereira;23;Midfielder;Brazil;Manchester United
+Grady Diangana;21;Midfielder;England;West Ham United
+Daniel Amartey;24;Midfielder;Ghana;Leicester City
+Hamza Choudhury;22;Midfielder;England;Leicester City
+Antonio Valencia;34;Defender;Ecuador;Manchester United
+Matteo Darmian;29;Defender;Italy;Manchester United
+Kyle Walker-Peters;22;Defender;England;Tottenham Hotspur
+Kenneth Dahrup Zohorè;25;Forward;Denmark;Cardiff City
+Rachid Ghezzal;27;Forward;Algeria;Leicester City
+Fernando Llorente Torres;34;Forward;Spain;Tottenham Hotspur
+Ivan Ricardo Neves Abreu Cavaleiro;26;Forward;Portugal;Wolverhampton Wanderers
+Aboubakar Kamara;24;Forward;France;Fulham
+Ben Hamer;31;Goalkeeper;England;Huddersfield Town
+Mason Holgate;23;Defender;England;Everton
+Caglar Söyüncü;23;Defender;Turkey;Leicester City
+Leighton Baines;34;Defender;England;Everton
+Jack Simpson;22;Defender;England;AFC Bournemouth
+Victor Wanyama;28;Midfielder;Kenya;Tottenham Hotspur
+Leandro Bacuna;28;Midfielder;Curaçao;Cardiff City
+Moussa Dembele;32;Midfielder;Belgium;Tottenham Hotspur
+Tom Cleverley;30;Midfielder;England;Watford
+Alberto Moreno;27;Defender;Spain;Liverpool
+Phil Jagielka;37;Defender;England;Everton
+Ademola Lookman;22;Forward;England;Everton
+Floyd Ayité;30;Midfielder;Togo;Fulham
+Steven Defour;31;Midfielder;Belgium;Burnley
+David Button;30;Goalkeeper;England;Brighton & Hove Albion
+Danny Simpson;32;Defender;England;Leicester City
+Joselu;29;Forward;Spain;Newcastle United
+Adam Lallana;31;Midfielder;England;Liverpool
+Rajiv van La Parra;28;Midfielder;Netherlands;Huddersfield Town
+Stefan Marius Johansen;28;Midfielder;Norway;Fulham
+Callum Hudson-Odoi;18;Midfielder;England;Chelsea
+Kadeem Harris;26;Midfielder;England;Cardiff City
+Jack Wilshere;27;Midfielder;England;West Ham United
+Mohamed Elneny;27;Midfielder;Egypt;Arsenal
+Jason Puncheon;33;Midfielder;England;Huddersfield Town
+Paulo Gazzaniga;27;Goalkeeper;Argentina;Tottenham Hotspur
+Stephen Ward;34;Defender;Republic of Ireland;Burnley
+Faustino Marcos Alberto Rojo;29;Defender;Argentina;Manchester United
+Christian Fuchs;33;Defender;Austria;Leicester City
+Yoshinori Muto;27;Forward;Japan;Newcastle United
+Adama Diakhaby;23;Forward;France;Huddersfield Town
+Lucas Perez;31;Forward;Spain;West Ham United
+Andriy Yarmolenko;30;Forward;Ukraine;West Ham United
+Phil Foden;19;Midfielder;England;Manchester City
+Håvard Nordtveit;29;Midfielder;Norway;Fulham
+Domingos Quina;19;Midfielder;Portugal;Watford
+Carl Jenkinson;27;Defender;England;Arsenal
+Miguel Ángel Britos Cabrera;34;Defender;Uruguay;Watford
+Konstantinos Mavropanos;21;Defender;Greece;Arsenal
+Loris Karius;26;Goalkeeper;Germany;Liverpool
+Tyrone Mings;26;Defender;England;AFC Bournemouth
+Manolo Gabbiadini;27;Forward;Italy;Southampton
+Danny Ward;28;Forward;England;Cardiff City
+Andy Carroll;30;Forward;England;West Ham United
+Simon Mignolet;31;Goalkeeper;Belgium;Liverpool
+Samir Nasri;32;Midfielder;France;West Ham United
+Jacob Murphy;24;Midfielder;England;Newcastle United
+Nathaniel Chalobah;24;Midfielder;England;Watford
+Willy Caballero;38;Goalkeeper;Argentina;Chelsea
+Michel Vorm;36;Goalkeeper;Netherlands;Tottenham Hotspur
+Fabricio Martín Agosto Ramírez;31;Goalkeeper;Spain;Fulham
+Mark Travers;20;Goalkeeper;Republic of Ireland;AFC Bournemouth
+Davide Zappacosta;27;Defender;Italy;Chelsea
+Jazz Richards;28;Defender;Wales;Cardiff City
+Marc Navarro Ceciliano;24;Defender;Spain;Watford
+Ben Gibson;26;Defender;England;Burnley
+Joshua Sims;22;Midfielder;England;Southampton
+Carlos Sánchez;33;Midfielder;Colombia;West Ham United
+Oliver Skipp;19;Midfielder;England;Tottenham Hotspur
+Vicente Iborra De La Fuente;31;Midfielder;Spain;Leicester City
+Demeaco Duhaney;21;Defender;England;Huddersfield Town
+Gary Cahill;33;Defender;England;Chelsea
+Sebastian Prödl;32;Defender;Austria;Watford
+Antonio Barreca;24;Defender;Italy;Newcastle United
+Alfie Jones;22;Defender;England;Southampton
+Ali Koiki;19;Defender;England;Burnley
+Anthony Driscoll-Glennon;19;Defender;England;Burnley
+Ben White;22;Defender;England;Brighton & Hove Albion
+Cameron John;20;Defender;England;Wolverhampton Wanderers
+Dan Burn;27;Defender;England;Brighton & Hove Albion
+Jaïro Riedewald;23;Defender;Netherlands;Crystal Palace
+James Garner;18;Defender;England;Manchester United
+Jamie Sterry;23;Defender;England;Newcastle United
+Josh Knight;22;Defender;England;Leicester City
+Kortney Hause;24;Defender;England;Wolverhampton Wanderers
+Lewis Cass;19;Defender;England;Newcastle United
+Marc Guehi;19;Defender;England;Chelsea
+Markus Suttner;32;Defender;Austria;Brighton & Hove Albion
+Matthew Connolly;32;Defender;England;Cardiff City
+Max Kilman;22;Defender;England;Wolverhampton Wanderers
+Nikola Tavares;20;Defender;England;Crystal Palace
+Pape N'Diaye Souaré;29;Defender;Senegal;Crystal Palace
+Sam Woods;21;Defender;England;Crystal Palace
+Timothy Eyoma;19;Defender;England;Tottenham Hotspur
+Tyias Browning;25;Defender;England;Everton
+Tyreke Johnson;21;Defender;England;Southampton
+Zechariah Medley;19;Defender;England;Arsenal
+Zeze  Steven Sessegnon;19;Defender;England;Fulham
+Ben Wilmot;20;Defender;England;Watford
+Philippe Sandler;22;Defender;Netherlands;Manchester City
+Dominic Solanke;22;Forward;England;AFC Bournemouth
+Lys Mousset;23;Forward;France;AFC Bournemouth
+Matěj Vydra;27;Forward;Czech Republic;Burnley
+Cesc Fabregas;32;Midfielder;Spain;Chelsea
+Joel Coleman;24;Goalkeeper;England;Huddersfield Town
+John Ruddy;33;Goalkeeper;England;Wolverhampton Wanderers
+Fraser Forster;31;Goalkeeper;England;Southampton
+Julián Speroni;40;Goalkeeper;Argentina;Crystal Palace
+Shinji Okazaki;33;Forward;Japan;Leicester City
+Steven Davis;34;Midfielder;Northern Ireland;Southampton
+Callum Slattery;20;Midfielder;England;Southampton
+Mason Greenwood;18;Midfielder;England;Manchester United
+Neeskens Kebano;27;Midfielder;Congo DR;Fulham
+Daniel Williams;30;Midfielder;USA;Huddersfield Town
+Kayne Ramsey;19;Midfielder;England;Southampton
+Adrien Sebastian Perruchet Silva;30;Midfielder;Portugal;Leicester City
+Ibrahima Cissé;25;Midfielder;Belgium;Fulham
+Adrián;32;Goalkeeper;Spain;West Ham United
+Alex Smithies;29;Goalkeeper;England;Cardiff City
+Alfie Whiteman;21;Goalkeeper;England;Tottenham Hotspur
+Brian Murphy;36;Goalkeeper;Republic of Ireland;Cardiff City
+Danny Ward;26;Goalkeeper;Wales;Leicester City
+Emiliano Martínez;27;Goalkeeper;Argentina;Arsenal
+Freddie Woodman;22;Goalkeeper;England;Newcastle United
+Heurelho da Silva Gomes;38;Goalkeeper;Brazil;Watford
+Jason Steele;29;Goalkeeper;England;Brighton & Hove Albion
+Joe Daniel Tupper;21;Goalkeeper;England;Crystal Palace
+Karl Darlow;29;Goalkeeper;England;Newcastle United
+Lee Grant;36;Goalkeeper;England;Manchester United
+Alex Oxlade-Chamberlain;26;Midfielder;England;Liverpool
+Maarten Stekelenburg;37;Goalkeeper;Netherlands;Everton
+Ryan Schofield;19;Goalkeeper;England;Huddersfield Town
+Sergio Romero;32;Goalkeeper;Argentina;Manchester United
+Curtis Jones;18;Midfielder;England;Liverpool
+Will Norris;26;Goalkeeper;England;Wolverhampton Wanderers
+Arijanet Muric;20;Goalkeeper;Montenegro;Manchester City
+Claudio Bravo;36;Goalkeeper;Chile;Manchester City
+Denis Suárez;25;Midfielder;Spain;Arsenal
+Joseph Willock;20;Midfielder;England;Arsenal
+Matty Daly;18;Midfielder;England;Huddersfield Town
+Fousseni Diabaté;24;Midfielder;Mali;Leicester City
+Abdelhamid Sabiri;22;Midfielder;Morocco;Huddersfield Town
+Lazar Marković;25;Midfielder;Serbia;Fulham
+Bakary Sako;31;Midfielder;Mali;Crystal Palace
+Rafael Euclides Soares Camacho;19;Midfielder;Portugal;Liverpool
+James McCarthy;28;Midfielder;Republic of Ireland;Everton
+Luke Amos;22;Midfielder;England;Tottenham Hotspur
+Conor Coventry;19;Midfielder;Republic of Ireland;West Ham United
+Daniel Sturridge;30;Forward;England;Liverpool
+Danny Drinkwater;29;Midfielder;England;Chelsea
+Emile Smith Rowe;19;Midfielder;England;Arsenal
+Ethan Ampadu;19;Midfielder;Wales;Chelsea
+George Marsh;20;Midfielder;England;Tottenham Hotspur
+Jayson Molumby;20;Midfielder;Republic of Ireland;Brighton & Hove Albion
+Josh Benson;19;Midfielder;England;Burnley
+Kelland Watts;20;Midfielder;England;Newcastle United
+Kieran Dowell;22;Midfielder;England;Everton
+Kyle Taylor;20;Midfielder;England;AFC Bournemouth
+Luca de la Torre;21;Midfielder;USA;Fulham
+Luke Dreher;20;Midfielder;England;Crystal Palace
+Marc Pugh;32;Midfielder;England;AFC Bournemouth
+Matt Butcher;22;Midfielder;England;AFC Bournemouth
+Max Harrison Sanders;20;Midfielder;England;Brighton & Hove Albion
+Nathan Holland;21;Midfielder;England;West Ham United
+Nnamdi Ofoborh;19;Midfielder;England;AFC Bournemouth
+Divock Origi;24;Forward;Belgium;Liverpool
+Ryan Giles;19;Midfielder;England;Wolverhampton Wanderers
+Sullay Kaikai;24;Midfielder;England;Crystal Palace
+Emerson Hyndman;23;Midfielder;USA;AFC Bournemouth
+Victor Moses;28;Midfielder;Nigeria;Chelsea
+Angel Gomes;19;Midfielder;England;Manchester United
+Alexander Sørloth;23;Forward;Norway;Crystal Palace
+Danny Welbeck;28;Forward;England;Arsenal
+Michael Obafemi;19;Forward;Republic of Ireland;Southampton
+Leonardo Bonatini Lohner Maia;25;Forward;Brazil;Wolverhampton Wanderers
+Loïc Damour;28;Midfielder;France;Cardiff City
+Peter Crouch;38;Forward;England;Burnley
+Connor Wickham;26;Forward;England;Crystal Palace
+Edward Nketiah;20;Forward;England;Arsenal
+Georges-Kevin N'Koudou Mbida;24;Forward;France;Tottenham Hotspur
+Ramadan Sobhi;22;Forward;Egypt;Huddersfield Town
+Aaron Rowe;19;Forward;England;Huddersfield Town
+Ben Johnson;19;Forward;England;West Ham United
+Rhys Healey;24;Forward;England;Cardiff City
+Tahith Chong;19;Forward;Netherlands;Manchester United
+Vincent Janssen;25;Forward;Netherlands;Tottenham Hotspur
+Sam Gallagher;24;Forward;England;Southampton
+Alexandre Nascimento Costa Silva;22;Forward;Portugal;West Ham United
+Sam Surridge;21;Forward;England;AFC Bournemouth
+Adalberto Peñaranda Maestre;22;Forward;Venezuela;Watford
+Bright Enobakhare;21;Forward;England;Wolverhampton Wanderers
+Callum Roberts;22;Forward;England;Newcastle United
+Joe Powell;21;Forward;England;West Ham United
+Jonathan Walters;36;Forward;Republic of Ireland;Burnley
+Kazaiah Sterling;20;Forward;England;Tottenham Hotspur
+Sandro Ramirez;24;Forward;Spain;Everton
+Viktor Gyökeres;21;Forward;Sweden;Brighton & Hove Albion
+Collin Quaner;28;Forward;Germany;Huddersfield Town
+Gary Madine;29;Forward;England;Cardiff City
+Stefano Okaka;30;Forward;Italy;Watford
+Jermain Defoe;37;Forward;England;AFC Bournemouth

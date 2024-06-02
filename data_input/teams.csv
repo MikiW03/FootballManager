@@ -1,21 +1,21 @@
-﻿name;overall;attack;defense
-Manchester City;91;95;77
-Liverpool;90;89;78
-Chelsea;68;63;61
-Tottenham Hotspur;67;67;61
-Arsenal;66;73;49
-Manchester United;63;65;46
-Wolverhampton Wanderers;55;47;54
-Everton;52;54;54
-Leicester City;50;51;52
-West Ham United;50;52;45
-Watford;49;52;41
-Crystal Palace;48;51;47
-AFC Bournemouth;44;56;30
-Newcastle United;44;42;52
-Burnley;40;45;32
-Southampton;39;45;35
-Brighton & Hove Albion;36;35;40
-Cardiff City;34;34;31
-Fulham;27;34;19
-Huddersfield Town;19;22;24
+﻿name;overall;formation
+Manchester City;91;4-5-1
+Liverpool;90;4-3-3
+Chelsea;82;5-2-3
+Tottenham Hotspur;80;4-3-3
+Arsenal;77;4-3-3
+Manchester United;74;4-3-3
+Wolverhampton Wanderers;69;3-5-2
+Everton;65;4-4-2
+Leicester City;64;4-4-2
+West Ham United;60;4-5-1
+Watford;59;3-4-3
+Crystal Palace;57;5-4-1
+AFC Bournemouth;55;4-4-2
+Newcastle United;55;5-2-3
+Burnley;54;4-3-3
+Southampton;50;4-4-2
+Brighton & Hove Albion;49;4-5-1
+Cardiff City;45;5-2-3
+Fulham;42;5-4-1
+Huddersfield Town;39;4-4-2

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Microsoft.VisualBasic.FileIO;
 
@@ -9,7 +10,7 @@ public class LeagueInitializer
 {
     public string DataOutputPath { get; set; } = "data_output";
 
-    private Dictionary<string, Team> LoadTeams()
+    private Dictionary<string, Team> LoadTeams(int userChosenOverall)
     {
         var teams = new Dictionary<string, Team>();
 
@@ -18,28 +19,27 @@ public class LeagueInitializer
             parser.TextFieldType = FieldType.Delimited;
             parser.SetDelimiters(";");
             parser.ReadFields();
+
+            var rand = new Random();
             while (!parser.EndOfData)
             {
-                var random = new Random();
-                var defendersCount = random.Next(4, 6);
-                var midfieldersCount = random.Next(3, 5);
-                var forwardsCount = 10 - defendersCount - midfieldersCount;
-
                 var fields = parser.ReadFields();
+                var overall = short.Parse(fields[1]);
                 var team = new Team
                 {
                     Name = fields[0],
-                    Overall = short.Parse(fields[1]),
-                    Attack = short.Parse(fields[2]),
-                    Defense = short.Parse(fields[3]),
+                    Overall = overall,
+                    Attack = GenerateNormal(overall),
+                    Defense = GenerateNormal(overall),
                     Players = [],
-                    Formation = new Formation(defendersCount, midfieldersCount, forwardsCount),
+                    Formation = new Formation(short.Parse(fields[2].Split("-")[0]), short.Parse(fields[2].Split("-")[1]), short.Parse(fields[2].Split("-")[2])),
                 };
 
                 teams.Add(team.Name, team);
             }
         }
 
+        teams["Manchester City"].Overall = userChosenOverall;
         using (var parser = new TextFieldParser("data_input\\coaches.csv"))
         {
             parser.TextFieldType = FieldType.Delimited;
@@ -67,18 +67,35 @@ public class LeagueInitializer
             while (!parser.EndOfData)
             {
                 var fields = parser.ReadFields();
+                var playerTeam = teams[fields[4]];
+                var playerPosition = (Position)Enum.Parse(typeof(Position), fields[2]);
+                var playerOverall = GenerateNormal(playerTeam.Overall);
                 var player = new Player
                 {
                     Name = fields[0],
                     Age = short.Parse(fields[1]),
-                    Position = (Position)Enum.Parse(typeof(Position), fields[2]),
-                    Nationality = fields[4],
-                    Overall = short.Parse(fields[8]),
-                    Attack = short.Parse(fields[9]),
-                    Defense = short.Parse(fields[10]),
+                    Position = playerPosition,
+                    Nationality = fields[3],
+                    Overall = playerOverall,
+                    Attack = playerPosition switch
+                    {
+                        Position.Goalkeeper => 0,
+                        Position.Defender => GenerateNormal(50),
+                        Position.Midfielder => GenerateNormal(playerOverall),
+                        Position.Forward => playerOverall,
+                        _ => 0
+                    },
+                    Defense = playerPosition switch
+                    {
+                        Position.Goalkeeper => playerOverall,
+                        Position.Defender => playerOverall,
+                        Position.Midfielder => GenerateNormal(playerOverall),
+                        Position.Forward => GenerateNormal(50),
+                        _ => 0
+                    },
                 };
 
-                teams[fields[11]].Players.Add(player);
+                playerTeam.Players.Add(player);
             }
         }
 
@@ -130,9 +147,27 @@ public class LeagueInitializer
         return rounds;
     }
 
+    private static int GenerateNormal(int mean)
+    {
+        var random = new Random();
+        const int stdDev = 15;
+        double result;
+        do
+        {
+            var u1 = 1.0 - random.NextDouble();
+            var u2 = 1.0 - random.NextDouble();
+            var randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
+            result = mean + stdDev * randStdNormal;
+        } while (result > 99);
+        return (int)Math.Round(result);
+    }
+
     public void Init()
     {
-        var teams = LoadTeams();
+        Console.Write("The main character of this simulation is Manchester City Football Club.\nChoose their overall power rate(1-99) to simulate where it will place them in the table at the end of the season: ");
+        var userChosenOverall = short.Parse(Console.ReadLine());
+
+        var teams = LoadTeams(userChosenOverall);
         var rounds = DrawRounds(teams);
 
         var csvSaver = new CsvSaver(DataOutputPath);
