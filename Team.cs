@@ -29,13 +29,15 @@ public class Team()
         var forwards = availablePlayers.FindAll(player => player.Position == Position.Forward);
         var goalkeepers = availablePlayers.FindAll(player => player.Position == Position.Goalkeeper);
 
-        return goalkeepers.Take(1)
+        var players = goalkeepers.Take(1)
                 .Concat(defenders.Take(Formation.Defenders))
                 .Concat(midfielders.Take(Formation.Midfielders))
                 .Concat(forwards.Take(Formation.Forwards))
-                .Concat(defenders).Take(3)
-                .Concat(midfielders).Take(3)
-                .Concat(forwards).Take(3)
+                .Concat(defenders.Skip(Formation.Defenders).Take(3))
+                .Concat(midfielders.Skip(Formation.Midfielders).Take(3))
+                .Concat(forwards.Skip(Formation.Forwards).Take(3))
                 .ToList();
+
+        return players;
     }
 }
