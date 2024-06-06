@@ -21,7 +21,7 @@ public class Team()
     public int MatchesPlayed { get; set; }
     public int Injuries { get; set; }
 
-    public List<Player> GetSquad()
+    public List<Tuple<Player,int>> GetSquad()
     {
         var availablePlayers = Players.OrderByDescending(player => player.Overall).Where(player => player.Absence == 0).ToList();
         var defenders = availablePlayers.FindAll(player => player.Position == Position.Defender);
@@ -38,6 +38,6 @@ public class Team()
                 .Concat(forwards.Skip(Formation.Forwards).Take(3))
                 .ToList();
 
-        return players;
+        return players.Select(player => new Tuple<Player, int>(player, 0)).ToList();
     }
 }

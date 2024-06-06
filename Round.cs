@@ -17,10 +17,10 @@ public class Round
             if (Matches.IndexOf(match) != 0) continue;
             Console.WriteLine();
             Console.WriteLine($"{match.HomeTeam.Name}'s lineup: ");
-            PrintLineup(match.HomeLineup, match.HomeTeam);
+            PrintLineup(match.HomeLineup.ConvertAll(x=>x.Item1), match.HomeTeam);
 
             Console.WriteLine($"{match.AwayTeam.Name}'s lineup: ");
-            PrintLineup(match.AwayLineup, match.AwayTeam);
+            PrintLineup(match.AwayLineup.ConvertAll(x => x.Item1), match.AwayTeam);
 
             Console.WriteLine("Match events:");
             match.Events.OrderBy(eventItem => eventItem.Minute).ToList().ForEach(eventItem => eventItem.PrintDetails());
