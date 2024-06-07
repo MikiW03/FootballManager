@@ -27,6 +27,8 @@ public class Match(Team homeTeam, Team awayTeam)
         var rand = new Random();
         var teams = new List<Team>{HomeTeam, AwayTeam};
         var lineups = new List<List<Tuple<Player, int>>>{HomeLineup, AwayLineup};
+        var homeChangesCount = 0;
+        var awayChangesCount = 0;
 
         var events = new List<Event>();
 
@@ -54,11 +56,48 @@ public class Match(Team homeTeam, Team awayTeam)
         var injuries = DrawWithProbability([0, 1, 2], [95, 3, 2]);
         for (var i = 0; i < injuries; i++)
         {
+            var team = teams[rand.Next(2)];
+            var minute = rand.Next(1, 90);
+            var player = lineups[rand.Next(2)][rand.Next(0, 11)].Item1;
             events.Add(new InjuryEvent(
-                teams[rand.Next(2)], 
-                rand.Next(1, 90), 
-                lineups[rand.Next(2)][rand.Next(0, 11)].Item1,
+                team, 
+                minute, 
+                player,
                 DrawWithProbability([0, 1, 2, 3, 4, 5], [2, 25, 30, 15, 10, 8]))
+            );
+            events.Add(new SubstitutionEvent(
+                team,
+                minute,
+                player,
+                player
+                ));
+        }
+
+        //goals
+        var homeTeamLineupOverall = Math.Round(HomeLineup.Average(player => player.Item1.Overall));
+        var awayTeamLineupOverall = Math.Round(AwayLineup.Average(player => player.Item1.Overall));
+
+        var homeExpectedGoals = ((double)homeTeam.Attack / AwayTeam.Defense) * homeTeamLineupOverall / 100.0;
+        var awayExpectedGoals = ((double)AwayTeam.Attack / HomeTeam.Defense) * awayTeamLineupOverall / 100.0;
+
+        var homeGoals = Poisson(homeExpectedGoals);
+        var awayGoals = Poisson(awayExpectedGoals);
+
+        for (var i = 0; i < homeGoals; i++)
+        {
+            events.Add(new GoalEvent(
+                HomeTeam, 
+                rand.Next(1, 90),
+                DrawWithProbability(HomeLineup[..11].ConvertAll(player => player.Item1), HomeLineup[..11].ConvertAll(player => (double)player.Item1.Attack)))
+            );
+        }
+
+        for (var i = 0; i < awayGoals; i++)
+        {
+            events.Add(new GoalEvent(
+                AwayTeam, 
+                rand.Next(1, 90),
+                DrawWithProbability(AwayLineup[..11].ConvertAll(player => player.Item1), AwayLineup[..11].ConvertAll(player => (double)player.Item1.Attack)))
             );
         }
 
@@ -74,6 +113,21 @@ public class Match(Team homeTeam, Team awayTeam)
         //var injury2 = new InjuryEvent(HomeTeam, 1, HomeLineup[2].Item1, 1);
 
         //return [goal1, goal2, yellow, red, sub, injury, injury2];
+    }
+
+    private static int Poisson(double lambda)
+    {
+        var random = new Random();
+        var k = 0;
+        var p = 1.0;
+        var l = Math.Exp(-lambda);
+        do
+        {
+            k++;
+            p *= random.NextDouble();
+        }
+        while (p > l);
+        return k - 1;
     }
 
     private T DrawWithProbability<T>(List<T> items, List<double> probabilities)
