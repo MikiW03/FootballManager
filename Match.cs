@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.WebSockets;
+using System.Numerics;
 using System.Runtime.InteropServices;
 using FootballManager.Events;
 namespace FootballManager;
@@ -19,6 +21,32 @@ public class Match(Team homeTeam, Team awayTeam)
         AwayLineup = AwayTeam.GetSquad();
         Events = DrawEvents();
         UpdateStats();
+        HomeTeam.MatchesPlayed++;
+        AwayTeam.MatchesPlayed++;
+        for (int i = 0; i < HomeLineup.Count; i++)
+        {
+            var player = HomeLineup[i];
+            if (i < 11)
+            {
+                HomeLineup[i] = Tuple.Create(player.Item1, player.Item2 <= 0 ? player.Item2 + 90 : player.Item2);
+            }
+            var playerIndex = HomeTeam.Players.IndexOf(player.Item1);
+            HomeTeam.Players[playerIndex].MinutesPlayed += HomeLineup[i].Item2;
+            HomeTeam.Players[playerIndex].MatchesPlayed++;
+            HomeTeam.Players[playerIndex].Absence = Math.Max(0, HomeTeam.Players[playerIndex].Absence - 1);
+        }
+        for (int i = 0; i < AwayLineup.Count; i++)
+        {
+            var player = AwayLineup[i];
+            if (i < 11)
+            {
+                AwayLineup[i] = Tuple.Create(player.Item1, player.Item2 <= 0 ? player.Item2 + 90 : player.Item2);
+            }
+            var playerIndex = AwayTeam.Players.IndexOf(player.Item1);
+            AwayTeam.Players[playerIndex].MinutesPlayed += AwayLineup[i].Item2;
+            AwayTeam.Players[playerIndex].MatchesPlayed++;
+            AwayTeam.Players[playerIndex].Absence = Math.Max(0, AwayTeam.Players[playerIndex].Absence - 1);
+        }
     }
 
     private List<Event> DrawEvents()
@@ -101,18 +129,18 @@ public class Match(Team homeTeam, Team awayTeam)
             );
         }
 
-        return events;
-        
-        // For testing purposes
-        //var goal1 = new GoalEvent(HomeTeam, 20, HomeLineup[0].Item1);
-        //var goal2 = new GoalEvent(AwayTeam, 88, AwayLineup[0].Item1, AwayLineup[1].Item1);
-        //var yellow = new YellowCardEvent(HomeTeam, 40, HomeLineup[0].Item1);
-        //var red = new RedCardEvent(HomeTeam, 30, HomeLineup[4].Item1);
-        //var sub = new SubstitutionEvent(HomeTeam, 70, HomeLineup[4].Item1, HomeLineup[9].Item1);
-        //var injury = new InjuryEvent(AwayTeam, 31, AwayLineup[5].Item1, 4);
-        //var injury2 = new InjuryEvent(HomeTeam, 1, HomeLineup[2].Item1, 1);
+        // subs
+        var homeLineupPositions = Enumerable.Range(0, HomeLineup.Count).ToList();
+        var awayLineupPositions = Enumerable.Range(0, AwayLineup.Count).ToList();
 
-        //return [goal1, goal2, yellow, red, sub, injury, injury2];
+        var sub2 = new SubstitutionEvent(HomeTeam, 43, HomeLineup[homeLineupPositions[9]].Item1, HomeLineup[homeLineupPositions[12]].Item1);
+        (homeLineupPositions[12], homeLineupPositions[9]) = (homeLineupPositions[9], homeLineupPositions[12]);
+        var sub = new SubstitutionEvent(HomeTeam, 70, HomeLineup[homeLineupPositions[9]].Item1, HomeLineup[homeLineupPositions[11]].Item1);
+        (homeLineupPositions[11], homeLineupPositions[9]) = (homeLineupPositions[9], homeLineupPositions[11]);
+        events.Add(sub2);
+        events.Add(sub);
+
+        return events;
     }
 
     private static int Poisson(double lambda)
@@ -164,14 +192,56 @@ public class Match(Team homeTeam, Team awayTeam)
             switch (matchEvent)
             {
                 case GoalEvent goalEvent:
+                    if (goalEvent.Team == HomeTeam)
+                    {
+                        HomeGoals++;
+                        AwayTeam.GoalsConceded++;
+                    }
+                    else
+                    {
+                        AwayGoals++;
+                        HomeTeam.GoalsConceded++;
+                    }
+                    goalEvent.Team.GoalsScored++;
+                    goalEvent.Player.Goals++;
+                    if (goalEvent.Assist != null)
+                    {
+                        goalEvent.Assist.Assists++;
+                    }
                     break;
                 case YellowCardEvent yellowCardEvent:
+                    yellowCardEvent.Player.YellowCards++;
+                    yellowCardEvent.Team.YellowCards++;
                     break;
                 case RedCardEvent redCardEvent:
+                    redCardEvent.Player.RedCards++;
+                    redCardEvent.Team.RedCards++;
+                    redCardEvent.Player.Absence = 2;
                     break;
                 case SubstitutionEvent substitutionEvent:
+                    if (substitutionEvent.Team == HomeTeam)
+                    {
+                        var substitutedPlayerIndex = HomeLineup.FindIndex(x => x.Item1 == substitutionEvent.Player);
+                        var substituteIndex = HomeLineup.FindIndex(x => x.Item1 == substitutionEvent.Substitute);
+
+                        var substitutedPlayerMinutes = HomeLineup[substitutedPlayerIndex].Item2;
+                        HomeLineup[substitutedPlayerIndex] = Tuple.Create(substitutionEvent.Substitute, -substitutionEvent.Minute);
+                        HomeLineup[substituteIndex] = Tuple.Create(substitutionEvent.Player, substitutionEvent.Minute + substitutedPlayerMinutes);
+                    }
+                    else
+                    {
+                        var substitutedPlayerIndex = AwayLineup.FindIndex(x => x.Item1 == substitutionEvent.Player);
+                        var substituteIndex = AwayLineup.FindIndex(x => x.Item1 == substitutionEvent.Substitute);
+
+                        var substitutedPlayerMinutes = AwayLineup[substitutedPlayerIndex].Item2;
+                        AwayLineup[substitutedPlayerIndex] = Tuple.Create(substitutionEvent.Substitute, -substitutionEvent.Minute);
+                        AwayLineup[substituteIndex] = Tuple.Create(substitutionEvent.Player, substitutionEvent.Minute + substitutedPlayerMinutes);
+                    }
                     break;
                 case InjuryEvent injuryEvent:
+                    injuryEvent.Player.Absence = injuryEvent.Duration;
+                    injuryEvent.Player.Injuries++;
+                    injuryEvent.Team.Injuries++;
                     break;
             }
         }
