@@ -12,6 +12,23 @@ public class Round
         foreach (var match in Matches)
         {
             match.Simulate();
+            if (match.HomeGoals > match.AwayGoals)
+            {
+                match.HomeTeam.Points += 3;
+                match.HomeTeam.Wins++;
+                match.AwayTeam.Losses++;
+            } else if (match.HomeGoals < match.AwayGoals)
+            {
+                match.AwayTeam.Points += 3;
+                match.AwayTeam.Wins++;
+                match.HomeTeam.Losses++;
+            } else
+            {
+                match.HomeTeam.Points++;
+                match.AwayTeam.Points++;
+                match.HomeTeam.Draws++;
+                match.AwayTeam.Draws++;
+            }
             Console.WriteLine("{0,-25} {3,-25} {1,2}:{2,-2}", match.HomeTeam.Name, match.HomeGoals, match.AwayGoals, match.AwayTeam.Name);
 
             if (Matches.IndexOf(match) != 0) continue;
