@@ -10,7 +10,7 @@ public class LeagueInitializer
 {
     public string DataOutputPath { get; set; } = "data_output";
 
-    private Dictionary<string, Team> LoadTeams(int userChosenOverall)
+    private Dictionary<string, Team> LoadTeams(int userChosenAttack, int userChosenDefence)
     {
         var teams = new Dictionary<string, Team>();
 
@@ -39,7 +39,9 @@ public class LeagueInitializer
             }
         }
 
-        teams["Manchester City"].Overall = userChosenOverall;
+        teams["Manchester City"].Attack = GenerateNormal(userChosenAttack);
+        teams["Manchester City"].Defense = GenerateNormal(userChosenDefence);
+        teams["Manchester City"].Overall = (teams["Manchester City"].Attack + teams["Manchester City"].Defense)/2;
         using (var parser = new TextFieldParser("data_input\\coaches.csv"))
         {
             parser.TextFieldType = FieldType.Delimited;
@@ -105,7 +107,7 @@ public class LeagueInitializer
     private List<Round> DrawRounds(Dictionary<string, Team> teams)
     {
         var rounds = new List<Round>();
-        
+
         var teamsNames = teams.Keys.ToList();
         int numRounds = teamsNames.Count - 1;
         int half = teamsNames.Count / 2;
@@ -152,22 +154,39 @@ public class LeagueInitializer
         var random = new Random();
         const int stdDev = 15;
         double result;
-        do
-        {
-            var u1 = 1.0 - random.NextDouble();
-            var u2 = 1.0 - random.NextDouble();
-            var randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
-            result = mean + stdDev * randStdNormal;
-        } while (result > 99);
-        return (int)Math.Round(result);
+        var u1 = 1.0 - random.NextDouble();
+        var u2 = 1.0 - random.NextDouble();
+        var randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
+        result = mean + stdDev * randStdNormal;
+
+        return Math.Min(Math.Max((int)Math.Round(result), 1), 99);
     }
 
     public void Init()
     {
-        Console.Write("The main character of this simulation is Manchester City Football Club.\nChoose their overall power rate(1-99) to simulate where it will place them in the table at the end of the season: ");
-        var userChosenOverall = short.Parse(Console.ReadLine());
+        Console.WriteLine("The main character of this simulation is Manchester City Football Club.\nChoose their power rates to simulate where it will place them in the table at the end of the season");
+        short userChosenAttack;
+        short userChosenDefence;
+        bool flag;
+        do
+        {
+            Console.Write("Attack (1-99): ");
+            flag = short.TryParse(Console.ReadLine(), out userChosenAttack);
+        } while(userChosenAttack < 1 || userChosenAttack > 99 || !flag);
 
-        var teams = LoadTeams(userChosenOverall);
+        do
+        {
+            Console.Write("Defence (1-99): ");
+            flag = short.TryParse(Console.ReadLine(), out userChosenDefence);
+        } while(userChosenDefence < 1 || userChosenDefence > 99 || !flag);
+
+        Console.WriteLine();
+        Console.WriteLine("Simulation parameters: ");
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine($"Attack: {userChosenAttack}");
+        Console.WriteLine($"Defence: {userChosenDefence}");
+        Console.ResetColor();
+        var teams = LoadTeams(userChosenAttack, userChosenDefence);
         var rounds = DrawRounds(teams);
 
         var csvSaver = new CsvSaver(DataOutputPath);
