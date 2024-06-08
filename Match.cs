@@ -51,61 +51,156 @@ public class Match(Team homeTeam, Team awayTeam)
 
     private List<Event> DrawEvents()
     {
-        // TODO: Implement this method (drawing match events)
         var rand = new Random();
         var teams = new List<Team>{HomeTeam, AwayTeam};
         var lineups = new List<List<Tuple<Player, int>>>{HomeLineup, AwayLineup};
-        var homeChangesCount = 0;
-        var awayChangesCount = 0;
-
         var events = new List<Event>();
 
-        var yellowCards = DrawWithProbability([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [5, 5, 20, 20, 20, 10, 10, 3, 3, 2, 2]);
+        // subs
+        var homeSubs = new List<List<int>>();
+        var awaySubs = new List<List<int>>();
+
+        var homeSubsAvailable = HomeLineup[11..];
+        var awaySubsAvailable = AwayLineup[11..];
+
+        var homeLineupPositions = Enumerable.Range(0, HomeLineup.Count).ToList();
+        var awayLineupPositions = Enumerable.Range(0, AwayLineup.Count).ToList();
+        for (var i = 0; i < 3; i++)
+        {
+            if (homeSubsAvailable.Count != 0)
+            {
+                var homeSub = new List<int>
+                {
+                    rand.Next(60 + i * 10, 60 + (i + 1) * 10),
+                    homeLineupPositions[rand.Next(0, 11)],
+                    homeLineupPositions[HomeLineup.IndexOf(homeSubsAvailable[0])]
+                };
+
+                var sub = new SubstitutionEvent(HomeTeam, homeSub[0], HomeLineup[homeSub[1]].Item1, HomeLineup[homeSub[2]].Item1);
+                (homeLineupPositions[homeSub[2]], homeLineupPositions[homeSub[1]]) = (homeLineupPositions[homeSub[1]], homeLineupPositions[homeSub[2]]);
+
+                homeSubsAvailable.RemoveAt(0);
+                homeSubs.Add(homeSub);
+
+                events.Add(sub);
+            }
+
+            if (awaySubsAvailable.Count != 0)
+            {
+                var awaySub = new List<int>
+                {
+                    rand.Next(60 + i * 10, 60 + (i + 1) * 10),
+                    awayLineupPositions[rand.Next(0, 11)],
+                    awayLineupPositions[AwayLineup.IndexOf(awaySubsAvailable[0])]
+                };
+
+                var sub = new SubstitutionEvent(AwayTeam, awaySub[0], AwayLineup[awaySub[1]].Item1, AwayLineup[awaySub[2]].Item1);
+                (awayLineupPositions[awaySub[2]], awayLineupPositions[awaySub[1]]) = (awayLineupPositions[awaySub[1]], awayLineupPositions[awaySub[2]]);
+
+                awaySubsAvailable.RemoveAt(0);
+                awaySubs.Add(awaySub);
+
+                events.Add(sub);
+            }
+        }
+
+        // injuries
+        var injuries = DrawWithProbability([0, 1], [95, 5]);
+        for (var i = 0; i < injuries; i++)
+        {
+            var teamIndex = rand.Next(2);
+            var minute = rand.Next(1, 90);
+            var playerIndex = rand.Next(0, 11);
+            playerIndex = newPlayerIndex(teamIndex==0?homeSubs:awaySubs, minute, playerIndex);
+
+            events.Add(new InjuryEvent(
+                teams[teamIndex],
+                minute,
+                lineups[teamIndex][playerIndex].Item1,
+                DrawWithProbability([0, 1, 2], [10, 80, 10]))
+            );
+
+            if (teamIndex == 0 && homeSubsAvailable.Count != 0)
+            {
+                var homeSub = new List<int>
+                {
+                    minute,
+                    playerIndex,
+                    homeLineupPositions[HomeLineup.IndexOf(homeSubsAvailable[0])]
+                };
+
+                var sub = new SubstitutionEvent(HomeTeam, homeSub[0], HomeLineup[homeSub[1]].Item1, HomeLineup[homeSub[2]].Item1);
+                (homeLineupPositions[homeSub[2]], homeLineupPositions[homeSub[1]]) = (homeLineupPositions[homeSub[1]], homeLineupPositions[homeSub[2]]);
+
+                homeSubsAvailable.RemoveAt(0);
+                homeSubs.Add(homeSub);
+
+                events.Add(sub);
+            }
+
+            if (teamIndex == 1&& awaySubsAvailable.Count != 0)
+            {
+                var awaySub = new List<int>
+                {
+                    minute,
+                    playerIndex,
+                    awayLineupPositions[AwayLineup.IndexOf(awaySubsAvailable[0])]
+                };
+
+                var sub = new SubstitutionEvent(AwayTeam, awaySub[0], AwayLineup[awaySub[1]].Item1, AwayLineup[awaySub[2]].Item1);
+                (awayLineupPositions[awaySub[2]], awayLineupPositions[awaySub[1]]) = (awayLineupPositions[awaySub[1]], awayLineupPositions[awaySub[2]]);
+
+                awaySubsAvailable.RemoveAt(0);
+                awaySubs.Add(awaySub);
+
+                events.Add(sub);
+            }
+        }
+
+        var yellowCards = DrawWithProbability([0, 1, 2, 3, 4, 5], [5, 35, 30, 10, 10, 10]);
         for (var i = 0; i < yellowCards; i++)
         {
             var teamIndex = rand.Next(2);
+            var minute = rand.Next(1, 90);
+            var playersWithoutRedCard = teams[teamIndex].Players.Where(player => !(events.Any(e => e is RedCardEvent && e.Player == player))).ToList().ConvertAll(p => teams[teamIndex].Players.IndexOf(p)).ToList();
+            var playerIndex = playersWithoutRedCard[rand.Next(0, playersWithoutRedCard.Where(x=>x<11).ToList().Count)];
+            playerIndex = newPlayerIndex(teamIndex==0?homeSubs:awaySubs, minute, playerIndex);
+            
             events.Add(new YellowCardEvent(
-                teams[teamIndex], 
-                rand.Next(1, 90), 
-                lineups[teamIndex][rand.Next(0, 11)].Item1)
+                teams[teamIndex],
+                minute,
+                (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
             );
+            var playerYellowCards = events.Where(x => x is YellowCardEvent && x.Player == (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1).ToList();
+            if (playerYellowCards.Count == 2)
+            {
+                events.Add(new RedCardEvent(
+                    teams[teamIndex],
+                    Math.Max(playerYellowCards[0].Minute, playerYellowCards[1].Minute),
+                    (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
+                );
+            }
         }
-        var redCards = DrawWithProbability([0, 1, 2], [90, 9, 1]);
+        var redCards = DrawWithProbability([0, 1], [95, 5]);
         for (var i = 0; i < redCards; i++)
         {
             var teamIndex = rand.Next(2);
-            events.Add(new RedCardEvent(
-                teams[teamIndex], 
-                rand.Next(1, 90), 
-                lineups[teamIndex][rand.Next(0, 11)].Item1)
-            );
-        }
-
-        var injuries = DrawWithProbability([0, 1, 2], [95, 3, 2]);
-        for (var i = 0; i < injuries; i++)
-        {
-            var team = teams[rand.Next(2)];
             var minute = rand.Next(1, 90);
-            var player = lineups[rand.Next(2)][rand.Next(0, 11)].Item1;
-            events.Add(new InjuryEvent(
-                team, 
-                minute, 
-                player,
-                DrawWithProbability([0, 1, 2, 3, 4, 5], [2, 25, 30, 15, 10, 8]))
-            );
-            events.Add(new SubstitutionEvent(
-                team,
+            var playerIndex = rand.Next(0, 11);
+            playerIndex = newPlayerIndex(teamIndex == 0 ? homeSubs : awaySubs, minute, playerIndex);
+
+            events.Add(new RedCardEvent(
+                teams[teamIndex],
                 minute,
-                player,
-                player
-                ));
+                (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
+            );
         }
 
         //goals
         var homeTeamLineupOverall = Math.Round(HomeLineup.Average(player => player.Item1.Overall));
         var awayTeamLineupOverall = Math.Round(AwayLineup.Average(player => player.Item1.Overall));
 
-        var homeExpectedGoals = ((double)homeTeam.Attack / AwayTeam.Defense) * homeTeamLineupOverall / 100.0;
+        var homeExpectedGoals = ((double)HomeTeam.Attack / AwayTeam.Defense) * homeTeamLineupOverall / 100.0;
         var awayExpectedGoals = ((double)AwayTeam.Attack / HomeTeam.Defense) * awayTeamLineupOverall / 100.0;
 
         var homeGoals = Poisson(homeExpectedGoals);
@@ -113,34 +208,63 @@ public class Match(Team homeTeam, Team awayTeam)
 
         for (var i = 0; i < homeGoals; i++)
         {
-            events.Add(new GoalEvent(
-                HomeTeam, 
-                rand.Next(1, 90),
-                DrawWithProbability(HomeLineup[..11].ConvertAll(player => player.Item1), HomeLineup[..11].ConvertAll(player => (double)player.Item1.Attack)))
-            );
+            var minute = rand.Next(1, 90);
+            var player = DrawWithProbability(HomeLineup[..11].ConvertAll(player => player.Item1), HomeLineup[..11].ConvertAll(player => (double)player.Item1.Attack));
+            var playerIndex = HomeLineup.IndexOf(HomeLineup.Find(x => x.Item1 == player));
+            playerIndex = newPlayerIndex(homeSubs, minute, playerIndex);
+            var assist = DrawWithProbability([true, false], [60, 40]);
+            if (assist)
+            {
+                Player assistPlayer;
+                int assistPlayerIndex;
+                assistPlayer = DrawWithProbability(HomeLineup[..11].ConvertAll(player => player.Item1), HomeLineup[..11].ConvertAll(player => (double)player.Item1.Attack));
+                assistPlayerIndex = HomeLineup.IndexOf(HomeLineup.Find(x => x.Item1 == assistPlayer));
+                assistPlayerIndex = newPlayerIndex(homeSubs, minute, assistPlayerIndex);
+                events.Add(new GoalEvent(
+                    HomeTeam,
+                    minute,
+                    HomeLineup[playerIndex].Item1,
+                    HomeLineup[assistPlayerIndex].Item1
+                    )
+                );
+            } else
+            {
+                events.Add(new GoalEvent(
+                    HomeTeam,
+                    minute,
+                    HomeLineup[playerIndex].Item1
+                    )
+                );
+            }
         }
 
         for (var i = 0; i < awayGoals; i++)
         {
+            var minute = rand.Next(1, 90);
+            var player = DrawWithProbability(AwayLineup[..11].ConvertAll(player => player.Item1), AwayLineup[..11].ConvertAll(player => (double)player.Item1.Attack));
+            var playerIndex = AwayLineup.IndexOf(AwayLineup.Find(x => x.Item1 == player));
             events.Add(new GoalEvent(
-                AwayTeam, 
-                rand.Next(1, 90),
-                DrawWithProbability(AwayLineup[..11].ConvertAll(player => player.Item1), AwayLineup[..11].ConvertAll(player => (double)player.Item1.Attack)))
+                AwayTeam,
+                minute,
+                AwayLineup[playerIndex].Item1
+                )
             );
         }
 
-        // subs
-        var homeLineupPositions = Enumerable.Range(0, HomeLineup.Count).ToList();
-        var awayLineupPositions = Enumerable.Range(0, AwayLineup.Count).ToList();
-
-        var sub2 = new SubstitutionEvent(HomeTeam, 43, HomeLineup[homeLineupPositions[9]].Item1, HomeLineup[homeLineupPositions[12]].Item1);
-        (homeLineupPositions[12], homeLineupPositions[9]) = (homeLineupPositions[9], homeLineupPositions[12]);
-        var sub = new SubstitutionEvent(HomeTeam, 70, HomeLineup[homeLineupPositions[9]].Item1, HomeLineup[homeLineupPositions[11]].Item1);
-        (homeLineupPositions[11], homeLineupPositions[9]) = (homeLineupPositions[9], homeLineupPositions[11]);
-        events.Add(sub2);
-        events.Add(sub);
-
         return events;
+    }
+
+    private int newPlayerIndex(List<List<int>> subs, int minute, int playerIndex)
+    {
+        var newPlayer = subs.FirstOrDefault(sub => sub[1] == playerIndex && sub[0] <=
+        minute);
+
+        if (newPlayer != null)
+        {
+            playerIndex = newPlayer[2];
+        }
+
+        return playerIndex;
     }
 
     private static int Poisson(double lambda)
@@ -186,7 +310,6 @@ public class Match(Team homeTeam, Team awayTeam)
 
     private void UpdateStats()
     {
-        // TODO: Implement this method (updating players and teams stats)
         foreach (var matchEvent in Events)
         {
             switch (matchEvent)
@@ -216,7 +339,7 @@ public class Match(Team homeTeam, Team awayTeam)
                 case RedCardEvent redCardEvent:
                     redCardEvent.Player.RedCards++;
                     redCardEvent.Team.RedCards++;
-                    redCardEvent.Player.Absence = 2;
+                    redCardEvent.Player.Absence++;
                     break;
                 case SubstitutionEvent substitutionEvent:
                     if (substitutionEvent.Team == HomeTeam)
