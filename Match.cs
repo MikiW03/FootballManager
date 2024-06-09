@@ -33,7 +33,10 @@ public class Match(Team homeTeam, Team awayTeam)
             }
             var playerIndex = HomeTeam.Players.IndexOf(player.Item1);
             HomeTeam.Players[playerIndex].MinutesPlayed += HomeLineup[i].Item2;
-            HomeTeam.Players[playerIndex].MatchesPlayed++;
+            if(HomeLineup[i].Item2 > 0)
+            {
+                HomeTeam.Players[playerIndex].MatchesPlayed++;
+            }
             HomeTeam.Players[playerIndex].Absence = Math.Max(0, HomeTeam.Players[playerIndex].Absence - 1);
         }
         for (int i = 0; i < AwayLineup.Count; i++)
