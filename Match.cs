@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.WebSockets;
 using System.Numerics;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.InteropServices;
 using FootballManager.Events;
 namespace FootballManager;
@@ -157,37 +158,18 @@ public class Match(Team homeTeam, Team awayTeam)
             }
         }
 
-        var yellowCards = DrawWithProbability([0, 1, 2, 3, 4, 5], [5, 35, 30, 10, 10, 10]);
-        for (var i = 0; i < yellowCards; i++)
-        {
-            var teamIndex = rand.Next(2);
-            var minute = rand.Next(1, 90);
-            var playersWithoutRedCard = teams[teamIndex].Players.Where(player => !(events.Any(e => e is RedCardEvent && e.Player == player))).ToList().ConvertAll(p => teams[teamIndex].Players.IndexOf(p)).ToList();
-            var playerIndex = playersWithoutRedCard[rand.Next(0, playersWithoutRedCard.Where(x=>x<11).ToList().Count)];
-            playerIndex = newPlayerIndex(teamIndex==0?homeSubs:awaySubs, minute, playerIndex);
-            
-            events.Add(new YellowCardEvent(
-                teams[teamIndex],
-                minute,
-                (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
-            );
-            var playerYellowCards = events.Where(x => x is YellowCardEvent && x.Player == (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1).ToList();
-            if (playerYellowCards.Count == 2)
-            {
-                events.Add(new RedCardEvent(
-                    teams[teamIndex],
-                    Math.Max(playerYellowCards[0].Minute, playerYellowCards[1].Minute),
-                    (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
-                );
-            }
-        }
+        // red cards
         var redCards = DrawWithProbability([0, 1], [95, 5]);
         for (var i = 0; i < redCards; i++)
         {
             var teamIndex = rand.Next(2);
             var minute = rand.Next(1, 90);
-            var playerIndex = rand.Next(0, 11);
+            var playersWithoutRedCard = teams[teamIndex].Players.Where(player => !(events.Any(e => e is RedCardEvent && e.Player == player))).ToList().ConvertAll(p => teams[teamIndex].Players.IndexOf(p)).ToList();
+            var playerIndex = playersWithoutRedCard[rand.Next(0, playersWithoutRedCard.Where(x => x < 11).ToList().Count)];
             playerIndex = newPlayerIndex(teamIndex == 0 ? homeSubs : awaySubs, minute, playerIndex);
+            var playerIndexAndMinute = newRedCardsPlayerIndexAndMinutes(teamIndex == 0 ? homeSubs : awaySubs, minute, playerIndex);
+            playerIndex = playerIndexAndMinute[0];
+            minute = playerIndexAndMinute[1];
 
             events.Add(new RedCardEvent(
                 teams[teamIndex],
@@ -196,6 +178,59 @@ public class Match(Team homeTeam, Team awayTeam)
             );
         }
 
+        // yellow cards
+        var yellowCards = DrawWithProbability([0, 1, 2, 3, 4, 5], [5, 35, 30, 10, 10, 10]);
+        for (var i = 0; i < yellowCards; i++)
+        {
+            var teamIndex = rand.Next(2);
+            var minute = rand.Next(1, 90);
+
+
+            var playersWithoutRedCard = teams[teamIndex].Players.Where(player => !(events.Any(e => e is RedCardEvent && e.Player == player))).ToList().ConvertAll(p => teams[teamIndex].Players.IndexOf(p)).ToList();
+            var playerIndex = playersWithoutRedCard[rand.Next(0, playersWithoutRedCard.Where(x=>x<11).ToList().Count)];
+
+            var playerYellowCards = events.Where(x => x is YellowCardEvent && x.Player == (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1).ToList();
+            if (playerYellowCards.Count >= 1)
+            {
+                if(playerIndex == newPlayerIndex(teamIndex == 0 ? homeSubs : awaySubs, minute, playerIndex) && playerIndex == newRedCardsPlayerIndexAndMinutes(teamIndex == 0 ? homeSubs : awaySubs, minute, playerIndex)[0])
+                {
+                    events.Add(new YellowCardEvent(
+                         teams[teamIndex],
+                         minute,
+                         (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
+                    );
+
+                    playerYellowCards = events.Where(x => x is YellowCardEvent && x.Player == (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1).ToList();
+                    events.Add(new RedCardEvent(
+                        teams[teamIndex],
+                        Math.Max(playerYellowCards[0].Minute, playerYellowCards[1].Minute),
+                        (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
+                    );
+                }
+                else
+                {
+                    playerIndex = newPlayerIndex(teamIndex==0?homeSubs:awaySubs, minute, playerIndex);
+                    var playerIndexAndMinute = newRedCardsPlayerIndexAndMinutes(teamIndex == 0 ? homeSubs : awaySubs, minute, playerIndex);
+                    playerIndex = playerIndexAndMinute[0];
+                    minute = playerIndexAndMinute[1];
+                    events.Add(new YellowCardEvent(
+                        teams[teamIndex],
+                        minute,
+                        (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
+                    );
+                }
+            }
+            else
+            {
+                playerIndex = newPlayerIndex(teamIndex == 0 ? homeSubs : awaySubs, minute, playerIndex);
+                events.Add(new YellowCardEvent(
+                    teams[teamIndex],
+                    minute,
+                    (teamIndex == 0 ? HomeLineup : AwayLineup)[playerIndex].Item1)
+                );
+            }
+        }
+        
         //goals
         var homeTeamLineupOverall = Math.Round(HomeLineup.Average(player => player.Item1.Overall));
         var awayTeamLineupOverall = Math.Round(AwayLineup.Average(player => player.Item1.Overall));
@@ -210,7 +245,8 @@ public class Match(Team homeTeam, Team awayTeam)
         {
             var minute = rand.Next(1, 90);
             var player = DrawWithProbability(HomeLineup[..11].ConvertAll(player => player.Item1), HomeLineup[..11].ConvertAll(player => (double)player.Item1.Attack));
-            var playerIndex = HomeLineup.IndexOf(HomeLineup.Find(x => x.Item1 == player));
+            var playersWithoutRedCard = teams[0].Players.Where(player => !(events.Any(e => e is RedCardEvent && e.Player == player))).ToList().ConvertAll(p => teams[0].Players.IndexOf(p)).ToList();
+            var playerIndex = playersWithoutRedCard[rand.Next(0, playersWithoutRedCard.Where(x=>x<11).ToList().Count)];
             playerIndex = newPlayerIndex(homeSubs, minute, playerIndex);
             var assist = DrawWithProbability([true, false], [60, 40]);
             if (assist)
@@ -242,13 +278,34 @@ public class Match(Team homeTeam, Team awayTeam)
         {
             var minute = rand.Next(1, 90);
             var player = DrawWithProbability(AwayLineup[..11].ConvertAll(player => player.Item1), AwayLineup[..11].ConvertAll(player => (double)player.Item1.Attack));
-            var playerIndex = AwayLineup.IndexOf(AwayLineup.Find(x => x.Item1 == player));
-            events.Add(new GoalEvent(
-                AwayTeam,
-                minute,
-                AwayLineup[playerIndex].Item1
-                )
-            );
+            var playersWithoutRedCard = teams[1].Players.Where(player => !(events.Any(e => e is RedCardEvent && e.Player == player))).ToList().ConvertAll(p => teams[1].Players.IndexOf(p)).ToList();
+            var playerIndex = playersWithoutRedCard[rand.Next(0, playersWithoutRedCard.Where(x => x < 11).ToList().Count)]; ;
+            playerIndex = newPlayerIndex(awaySubs, minute, playerIndex);
+            var assist = DrawWithProbability([true, false], [60, 40]);
+            if (assist)
+            {
+                Player assistPlayer;
+                int assistPlayerIndex;
+                assistPlayer = DrawWithProbability(HomeLineup[..11].ConvertAll(player => player.Item1), HomeLineup[..11].ConvertAll(player => (double)player.Item1.Attack));
+                assistPlayerIndex = HomeLineup.IndexOf(HomeLineup.Find(x => x.Item1 == assistPlayer));
+                assistPlayerIndex = newPlayerIndex(awaySubs, minute, assistPlayerIndex);
+                events.Add(new GoalEvent(
+                    AwayTeam,
+                    minute,
+                    AwayLineup[playerIndex].Item1,
+                    AwayLineup[assistPlayerIndex].Item1
+                    )
+                );
+            }
+            else
+            {
+                events.Add(new GoalEvent(
+                    AwayTeam,
+                    minute,
+                    AwayLineup[playerIndex].Item1
+                    )
+                );
+            }
         }
 
         return events;
@@ -256,15 +313,35 @@ public class Match(Team homeTeam, Team awayTeam)
 
     private int newPlayerIndex(List<List<int>> subs, int minute, int playerIndex)
     {
-        var newPlayer = subs.FirstOrDefault(sub => sub[1] == playerIndex && sub[0] <=
-        minute);
+        var newPlayer = subs.FirstOrDefault(sub => (sub[1] == playerIndex) && (sub[0] <=
+        minute));
 
         if (newPlayer != null)
         {
             playerIndex = newPlayer[2];
+            return playerIndex;
+        }
+        
+        return playerIndex;
+    }
+    
+    private List<int> newRedCardsPlayerIndexAndMinutes(List<List<int>> subs, int minute, int playerIndex)
+    {
+        var newPlayer = subs.FirstOrDefault(sub => (sub[1] == playerIndex) && (sub[0] >=
+        minute));
+
+        //add minutes to the red card event so that the player is not subbed off after the red card
+
+        if (newPlayer != null)
+        {
+            //Console.WriteLine($"Not null {HomeLineup[newPlayer[2]].Item1.Name} - {newPlayer[0]} minute"); <- for testing
+            var rand = new Random();
+            minute = newPlayer[0] + rand.Next(0, 90 - newPlayer[0]);
+            playerIndex = newPlayer[2];
+            return [playerIndex, minute];
         }
 
-        return playerIndex;
+        return [playerIndex, minute];
     }
 
     private static int Poisson(double lambda)
