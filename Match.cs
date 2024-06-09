@@ -361,7 +361,9 @@ public class Match(Team homeTeam, Team awayTeam)
             k++;
             p *= random.NextDouble();
         }
-        while (p > l);
+        while (p > l && k < 20);
+
+        if (k >= 20) return k - random.Next(1, 10);
         return k - 1;
     }
 

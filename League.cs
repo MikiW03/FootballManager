@@ -1,10 +1,9 @@
 ﻿namespace FootballManager;
 
-public class League(Dictionary<string, Team> teams, List<Round> rounds, ISavable dataSaver)
+public class League(Dictionary<string, Team> teams, List<Round> rounds)
 {
     public Dictionary<string, Team> Teams { get; set; } = teams;
     public List<Round> Rounds { get; set; } = rounds;
-    private ISavable DataSaver { get; set; } = dataSaver;
 
     public void StartLeague()
     {
@@ -15,7 +14,6 @@ public class League(Dictionary<string, Team> teams, List<Round> rounds, ISavable
             Console.WriteLine("-----------------------------------------");
 
             round.Simulate();
-            DataSaver.SaveData(round, Rounds.IndexOf(round) + 1);
 
             Console.WriteLine();
             Console.WriteLine($"Table after round {Rounds.IndexOf(round) + 1}:");
@@ -28,7 +26,7 @@ public class League(Dictionary<string, Team> teams, List<Round> rounds, ISavable
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
-        }
+         }
     }
 
     private void PrintTable()

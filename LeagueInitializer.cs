@@ -189,8 +189,10 @@ public class LeagueInitializer
         var teams = LoadTeams(userChosenAttack, userChosenDefence);
         var rounds = DrawRounds(teams);
 
-        var csvSaver = new CsvSaver(DataOutputPath);
-        League league = new(teams, rounds, csvSaver);
+        League league = new(teams, rounds);
         league.StartLeague();
+        var csvSaver = new CsvSaver(DataOutputPath);
+        csvSaver.SaveData(league, userChosenAttack, userChosenDefence);
+        Console.WriteLine("Simulation finished. Check the results in the bin\\Debug\\net8.0\\data_output folder.");
     }
 }

@@ -2,5 +2,5 @@
 
 public interface ISavable
 {
-    void SaveData(Round round, int roundNumber);
+    void SaveData(League league, int userChosenAttack, int userChosenDefence);
 }
