@@ -9,7 +9,6 @@ public class Team()
     public int Defense { get; set; }
     public int Overall { get; set; }
     public Coach Coach { get; set; }
-    public int Form { get; set; }
     public int Points { get; set; }
     public int GoalsScored { get; set; }
     public int GoalsConceded { get; set; }

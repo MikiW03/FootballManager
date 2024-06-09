@@ -2,9 +2,9 @@
 
 public abstract class Event(Team team, int minute, Player player)
 {
-    public Team Team { get; set; } = team;
-    public int Minute { get; set; } = minute;
-    public Player Player { get; set; } = player;
+    public Team Team { get; } = team;
+    public int Minute { get; } = minute;
+    public Player Player { get; } = player;
 
     public abstract void PrintDetails();
 }

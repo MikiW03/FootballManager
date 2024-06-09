@@ -47,7 +47,7 @@ public class Round
         }
     }
 
-    private void PrintLineup(List<Player> lineup, Team team)
+    private static void PrintLineup(IReadOnlyList<Player> lineup, Team team)
     {
         var playerIndex = 1;
         var defence = "";

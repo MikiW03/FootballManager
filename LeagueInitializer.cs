@@ -8,9 +8,9 @@ namespace FootballManager;
 
 public class LeagueInitializer
 {
-    public string DataOutputPath { get; set; } = "data_output";
+    private string DataOutputPath { get; } = "data_output";
 
-    private Dictionary<string, Team> LoadTeams(int userChosenAttack, int userChosenDefence)
+    private static Dictionary<string, Team> LoadTeams(int userChosenAttack, int userChosenDefence)
     {
         var teams = new Dictionary<string, Team>();
 
@@ -104,23 +104,23 @@ public class LeagueInitializer
         return teams;
     }
 
-    private List<Round> DrawRounds(Dictionary<string, Team> teams)
+    private static List<Round> DrawRounds(Dictionary<string, Team> teams)
     {
         var rounds = new List<Round>();
 
         var teamsNames = teams.Keys.ToList();
-        int numRounds = teamsNames.Count - 1;
-        int half = teamsNames.Count / 2;
+        var numRounds = teamsNames.Count - 1;
+        var half = teamsNames.Count / 2;
 
 
-        for (int _ = 0; _ < numRounds; _++)
+        for (var _ = 0; _ < numRounds; _++)
         {
             var round = new Round()
             {
                 Matches = []
             };
 
-            for (int matchNum = 0; matchNum < half; matchNum++)
+            for (var matchNum = 0; matchNum < half; matchNum++)
             {
                 var match = new Match(teams[teamsNames[matchNum]], teams[teamsNames[teamsNames.Count - matchNum - 1]]);
                 round.Matches.Add(match);
@@ -131,14 +131,14 @@ public class LeagueInitializer
             teamsNames.RemoveAt(teamsNames.Count - 1);
         }
 
-        for (int roundNum = 0; roundNum < numRounds; roundNum++)
+        for (var roundNum = 0; roundNum < numRounds; roundNum++)
         {
             var round = new Round
             {
                 Matches = []
             };
 
-            for (int matchNum = 0; matchNum < half; matchNum++)
+            for (var matchNum = 0; matchNum < half; matchNum++)
             {
                 var match = new Match(rounds[roundNum].Matches[matchNum].AwayTeam, rounds[roundNum].Matches[matchNum].HomeTeam);
                 round.Matches.Add(match);
@@ -153,11 +153,10 @@ public class LeagueInitializer
     {
         var random = new Random();
         const int stdDev = 15;
-        double result;
         var u1 = 1.0 - random.NextDouble();
         var u2 = 1.0 - random.NextDouble();
         var randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Sin(2.0 * Math.PI * u2);
-        result = mean + stdDev * randStdNormal;
+        var result = mean + stdDev * randStdNormal;
 
         return Math.Min(Math.Max((int)Math.Round(result), 1), 99);
     }
@@ -193,6 +192,6 @@ public class LeagueInitializer
         league.StartLeague();
         var csvSaver = new CsvSaver(DataOutputPath);
         csvSaver.SaveData(league, userChosenAttack, userChosenDefence);
-        Console.WriteLine("Simulation finished. Check the results in the bin\\Debug\\net8.0\\data_output folder.");
+        Console.WriteLine(@"Simulation finished. Check the results in the bin\Debug\net8.0\data_output folder.");
     }
 }

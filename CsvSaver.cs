@@ -3,12 +3,12 @@ using FootballManager.Events;
 
 namespace FootballManager;
 
-public class CsvSaver(string path) : ISavable
+public class CsvSaver(string path)
 {
-    public string DataOutputPath { get; set; } = path;
+    private string DataOutputPath { get; } = path;
     public void SaveData(League league, int userChosenAttack, int userChosenDefence)
     {
-        var name = $"{DateTime.Now.ToString("yyMMddHHmmss")}_simulation_{userChosenAttack}a_{userChosenDefence}d";
+        var name = $"{DateTime.Now:yyMMddHHmmss}_simulation_{userChosenAttack}a_{userChosenDefence}d";
         Directory.CreateDirectory(DataOutputPath);
         Directory.CreateDirectory($@"{DataOutputPath}\{name}");
 
@@ -79,17 +79,17 @@ public class CsvSaver(string path) : ISavable
             playersStats.AppendLine(playerStatsRow);
         }
 
-        using (StreamWriter writer = new StreamWriter($@"{DataOutputPath}\{name}\{name}_events_logs.csv", append: true))
+        using (var writer = new StreamWriter($@"{DataOutputPath}\{name}\{name}_events_logs.csv", append: true))
         {
             writer.WriteLine(eventsLogs);
         }
 
-        using (StreamWriter writer = new StreamWriter($@"{DataOutputPath}\{name}\{name}_table.csv", append: true))
+        using (var writer = new StreamWriter($@"{DataOutputPath}\{name}\{name}_table.csv", append: true))
         {
             writer.WriteLine(roundTable);
         }
 
-        using (StreamWriter writer = new StreamWriter($@"{DataOutputPath}\{name}\{name}_players_stats.csv", append: true))
+        using (var writer = new StreamWriter($@"{DataOutputPath}\{name}\{name}_players_stats.csv", append: true))
         {
             writer.WriteLine(playersStats);
         }

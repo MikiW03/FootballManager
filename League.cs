@@ -3,7 +3,7 @@
 public class League(Dictionary<string, Team> teams, List<Round> rounds)
 {
     public Dictionary<string, Team> Teams { get; set; } = teams;
-    public List<Round> Rounds { get; set; } = rounds;
+    public List<Round> Rounds { get; } = rounds;
 
     public void StartLeague()
     {
@@ -26,7 +26,7 @@ public class League(Dictionary<string, Team> teams, List<Round> rounds)
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
-         }
+        }
     }
 
     private void PrintTable()
