@@ -3,9 +3,20 @@ using FootballManager.Events;
 
 namespace FootballManager;
 
+/// <summary>   Provides functionality to save league data to CSV files. </summary>
+///
+/// <param name="path"> The full path where the CSV files will be saved. </param>
 public class CsvSaver(string path)
 {
+    /// <summary>   Gets the full path of the data output directory. </summary>
+    ///
+    /// <value> The full path of the data output directory. </value>
     private string DataOutputPath { get; } = path;
+    /// <summary>   Saves league data, user-chosen attack, and defense values to CSV files. </summary>
+    ///
+    /// <param name="league">               The league data to be saved. </param>
+    /// <param name="userChosenAttack">     The user-chosen attack value. </param>
+    /// <param name="userChosenDefence">    The user-chosen defense value. </param>
     public void SaveData(League league, int userChosenAttack, int userChosenDefence)
     {
         var name = $"{DateTime.Now:yyMMddHHmmss}_simulation_{userChosenAttack}a_{userChosenDefence}d";

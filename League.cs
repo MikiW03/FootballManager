@@ -1,10 +1,21 @@
 ﻿namespace FootballManager;
 
+/// <summary>   Represents a football league.  </summary>
+///
+/// <param name="teams">    A dictionary of teams participating in the league. </param>
+/// <param name="rounds">   A list of rounds to be played in the league. </param>
 public class League(Dictionary<string, Team> teams, List<Round> rounds)
 {
+    /// <summary>   Gets or sets the teams in the league. </summary>
+    ///
+    /// <value> A dictionary of teams. </value>
     public Dictionary<string, Team> Teams { get; set; } = teams;
+    /// <summary>   Gets the rounds of the league. </summary>
+    ///
+    /// <value> A list of rounds. </value>
     public List<Round> Rounds { get; } = rounds;
 
+    /// <summary>   Starts the league by simulating each round, updating standings, and displaying results. </summary>
     public void StartLeague()
     {
         foreach (var round in Rounds)
@@ -29,6 +40,7 @@ public class League(Dictionary<string, Team> teams, List<Round> rounds)
         }
     }
 
+    /// <summary>   Prints the current league table. </summary>
     private void PrintTable()
     {
         const string formattingString = "{8,3} {0,-25} {1,-8} {2,-3} {3,-3} {4,-3} {5,-4} {6,-4} {7,-10}";

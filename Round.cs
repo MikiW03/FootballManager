@@ -3,10 +3,15 @@ using System.Text.RegularExpressions;
 
 namespace FootballManager;
 
+/// <summary>   Represents a round of matches in a football league. </summary>
 public class Round
 {
+    /// <summary>   Gets or sets the matches for this round. </summary>
+    ///
+    /// <value> A list of matches. </value>
     public List<Match> Matches { get; set; }
 
+    /// <summary>   Simulates all the matches in this round, updates the points, and displays the results. </summary>
     public void Simulate()
     {
         foreach (var match in Matches)
@@ -47,6 +52,10 @@ public class Round
         }
     }
 
+    /// <summary>   Prints the lineup of players for the specified team. </summary>
+    ///
+    /// <param name="lineup">   The list of players in the lineup.  </param>
+    /// <param name="team">     The team whose lineup is being printed. </param>
     private static void PrintLineup(IReadOnlyList<Player> lineup, Team team)
     {
         var playerIndex = 1;
