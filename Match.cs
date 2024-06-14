@@ -6,16 +6,43 @@ using System.Runtime.InteropServices;
 using FootballManager.Events;
 namespace FootballManager;
 
+/// <summary> Represents a football match between two teams. </summary>
+///
+/// <param name="homeTeam"> The home team participating in the match. </param>
+/// <param name="awayTeam"> The away team participating in the match. </param>
+
 public class Match(Team homeTeam, Team awayTeam)
 {
+    /// <summary>   Gets the home team participating in the match. </summary>
+    ///
+    /// <value> The home team participating in the match. </value>
     public Team HomeTeam { get; } = homeTeam;
+    /// <summary>   Gets the away team participating in the match. </summary>
+    ///
+    /// <value> The away team participating in the match. </value>
     public Team AwayTeam { get; } = awayTeam;
+    /// <summary>   Gets or sets the number of goals scored by the home team. </summary>
+    ///
+    /// <value> The number of goals scored by the home team. </value>
     public int HomeGoals { get; set; }
+    /// <summary>   Gets or sets the number of goals scored by the away team. </summary>
+    ///
+    /// <value> The number of goals scored by the away team. </value>
     public int AwayGoals { get; set; }
+    /// <summary>   Gets or sets the lineup of the home team for the match. </summary>
+    ///
+    /// <value> The lineup of the home team for the match. </value>
     public List<Tuple<Player, int>> HomeLineup { get; set; }
+    /// <summary>   Gets or sets the lineup of the away team for the match. </summary>
+    ///
+    /// <value> The lineup of the away team for the match. </value>
     public List<Tuple<Player, int>> AwayLineup { get; set; }
+    /// <summary>   Gets or sets the list of events that occurred during the match. </summary>
+    ///
+    /// <value> The list of events that occurred during the match. </value>
     public List<Event> Events { get; set; }
 
+    /// <summary>   Simulates the match by processing player lineups, events, and updating statistics. </summary>
     public void Simulate()
     {
         HomeLineup = HomeTeam.GetSquad();
@@ -55,6 +82,10 @@ public class Match(Team homeTeam, Team awayTeam)
             AwayTeam.Players[playerIndex].Absence = Math.Max(0, AwayTeam.Players[playerIndex].Absence - 1);
         }
     }
+
+    /// <summary>   Draws events (substitutions, injuries, cards, goals) that occur during the match. </summary>
+    ///
+    /// <returns>   A list of events that occurred during the match.; </returns>
 
     private List<Event> DrawEvents()
     {
@@ -313,6 +344,14 @@ public class Match(Team homeTeam, Team awayTeam)
         return events;
     }
 
+    /// <summary>   Determines the updated player index considering substitution history. </summary>
+    ///
+    /// <param name="subs">         The sequence of substitution events or data. </param>
+    /// <param name="minute">       The minute of the match when the event occurred. </param>
+    /// <param name="playerIndex">  Index of the player in the lineup. </param>
+    ///
+    /// <returns>   The updated index of the player. </returns>
+
     private static int NewPlayerIndex(IEnumerable<List<int>> subs, int minute, int playerIndex)
     {
         var newPlayer = subs.FirstOrDefault(sub => (sub[1] == playerIndex) && (sub[0] <=
@@ -323,7 +362,15 @@ public class Match(Team homeTeam, Team awayTeam)
         return playerIndex;
 
     }
-    
+
+    /// <summary>   Determines the updated player index and minute for cards events considering substitution history. </summary>
+    ///
+    /// <param name="subs">         The sequence of substitution events or data. </param>
+    /// <param name="minute">       The minute of the match when the event occurred. </param>
+    /// <param name="playerIndex">  Index of the player in the lineup. </param>
+    ///
+    /// <returns>   A list containing updated player index and adjusted minute. </returns>
+
     private static List<int> NewRedCardsPlayerIndexAndMinutes(IEnumerable<List<int>> subs, int minute, int playerIndex)
     {
         var newPlayer = subs.FirstOrDefault(sub => (sub[1] == playerIndex) && (sub[0] >=
@@ -335,6 +382,12 @@ public class Match(Team homeTeam, Team awayTeam)
         return [playerIndex, minute];
 
     }
+
+    /// <summary>   Generates a random number of goals based on the Poisson distribution and the given lambda. </summary>
+    ///
+    /// <param name="lambda">   The expected rate of events per match simulation. </param>
+    ///
+    /// <returns>   The number of goal events to draw. </returns>
 
     private static int Poisson(double lambda)
     {
@@ -352,6 +405,18 @@ public class Match(Team homeTeam, Team awayTeam)
         if (k >= 20) return k - random.Next(1, 10);
         return k - 1;
     }
+
+    /// <summary>   Draws an item randomly based on given probabilities.
+    /// Used to select an item from a list based on specified probabilities, such as selecting players, events, or outcomes during a match simulation </summary>
+    ///
+    /// <exception cref="ArgumentException">    Thrown when one or more arguments have unsupported or
+    ///                                         illegal values. </exception>
+    ///
+    /// <typeparam name="T">    The type of items in the list. </typeparam>
+    /// <param name="items">            The list of items to choose from. </param>
+    /// <param name="probabilities">    The probabilities corresponding to each item in the list. </param>
+    ///
+    /// <returns>   The selected item based on the probabilities. </returns>
 
     private static T DrawWithProbability<T>(List<T> items, IReadOnlyList<double> probabilities)
     {
@@ -379,6 +444,7 @@ public class Match(Team homeTeam, Team awayTeam)
         return items[^1];
     }
 
+    /// <summary>   Updates team and player statistics based on match events. </summary>
     private void UpdateStats()
     {
         foreach (var matchEvent in Events)

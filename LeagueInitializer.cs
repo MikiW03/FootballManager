@@ -6,10 +6,20 @@ using Microsoft.VisualBasic.FileIO;
 
 namespace FootballManager;
 
+/// <summary>   Provides functionality to initialize a football league. </summary>
 public class LeagueInitializer
 {
+    /// <summary>   Gets the full pathname of the data output directory. </summary>
+    ///
+    /// <value> The full pathname of the data output directory. </value>
     private string DataOutputPath { get; } = "data_output";
 
+    /// <summary>   Loads the teams from the input files and sets their attributes. </summary>
+    ///
+    /// <param name="userChosenAttack">     The user-chosen attack value for Manchester City. </param>
+    /// <param name="userChosenDefence">    The user-chosen defense value for Manchester City. </param>
+    ///
+    /// <returns>   A dictionary of teams with their attributes set. </returns>
     private static Dictionary<string, Team> LoadTeams(int userChosenAttack, int userChosenDefence)
     {
         var teams = new Dictionary<string, Team>();
@@ -104,6 +114,11 @@ public class LeagueInitializer
         return teams;
     }
 
+    /// <summary>   Draws the rounds for the league, based on the teams. </summary>
+    ///
+    /// <param name="teams">    The dictionary of teams participating in the league. </param>
+    ///
+    /// <returns>   A list of rounds for the league. </returns>
     private static List<Round> DrawRounds(Dictionary<string, Team> teams)
     {
         var rounds = new List<Round>();
@@ -149,6 +164,11 @@ public class LeagueInitializer
         return rounds;
     }
 
+    /// <summary>   Generates a value from a normal distribution based on the given mean value. </summary>
+    ///
+    /// <param name="mean"> The mean value around which the normal distribution is centered. </param>
+    ///
+    /// <returns>   An integer representing a normally distributed value. </returns>
     private static int GenerateNormal(int mean)
     {
         var random = new Random();
@@ -161,6 +181,7 @@ public class LeagueInitializer
         return Math.Min(Math.Max((int)Math.Round(result), 1), 99);
     }
 
+    /// <summary>   Initializes the league, loads teams, draws rounds, starts the league, and saves the data. </summary>
     public void Init()
     {
         Console.WriteLine("The main character of this simulation is Manchester City Football Club.\nChoose their power rates to simulate where it will place them in the table at the end of the season");
